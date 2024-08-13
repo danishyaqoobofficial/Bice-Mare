@@ -715,6 +715,10 @@ video {
   margin-top: 80px;
 }
 
+.mt-\[4px\] {
+  margin-top: 4px;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -866,6 +870,14 @@ video {
 
 .h-\[56px\] {
   height: 56px;
+}
+
+.h-\[260px\] {
+  height: 260px;
+}
+
+.h-\[270px\] {
+  height: 270px;
 }
 
 .w-\[100px\] {
@@ -1476,6 +1488,11 @@ video {
 .px-\[12px\] {
   padding-left: 12px;
   padding-right: 12px;
+}
+
+.py-\[30px\] {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .pb-\[50px\] {
