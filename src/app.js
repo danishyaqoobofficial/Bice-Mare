@@ -1,3 +1,4 @@
+let value = true;
 let video_play_button = document.getElementById('video_play_button');
 
 video_play_button.addEventListener('click', () => {
@@ -35,3 +36,13 @@ valueDisplays.forEach((valueDisplay) => {
     } , duration)
 })
 
+
+// FAQs
+
+
+function FAQ(e) {
+    let mainDiv = e.closest('.main_div');
+    let faqAnswer = mainDiv.querySelector('.answer');
+    
+    faqAnswer.classList.toggle('!block');
+}
