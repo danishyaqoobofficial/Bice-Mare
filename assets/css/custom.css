@@ -20,7 +20,10 @@ body {
 }
 
 
-
 .custom_shadow{
     box-shadow: 0px 4px 6px #26262640;
+}
+
+.swiper-slide-next{
+    transform: scale(1.2) !important;
 }
