@@ -554,6 +554,14 @@ video {
   --tw-contain-style:  ;
 }
 
+.visible {
+  visibility: visible;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -586,12 +594,28 @@ video {
   top: 0px;
 }
 
+.right-5 {
+  right: 1.25rem;
+}
+
+.top-5 {
+  top: 1.25rem;
+}
+
 .z-0 {
   z-index: 0;
 }
 
 .z-50 {
   z-index: 50;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+.z-30 {
+  z-index: 30;
 }
 
 .col-span-2 {
@@ -786,12 +810,28 @@ video {
   -webkit-line-clamp: 6;
 }
 
+.block {
+  display: block;
+}
+
+.\!block {
+  display: block !important;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+.\!hidden {
+  display: none !important;
 }
 
 .size-5 {
@@ -932,6 +972,18 @@ video {
   height: 620px;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
+.h-\[700px\] {
+  height: 700px;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -996,6 +1048,14 @@ video {
   width: 16rem;
 }
 
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-7 {
+  width: 1.75rem;
+}
+
 .max-w-\[1700px\] {
   max-width: 1700px;
 }
@@ -1006,6 +1066,10 @@ video {
 
 .max-w-\[730px\] {
   max-width: 730px;
+}
+
+.max-w-\[1220px\] {
+  max-width: 1220px;
 }
 
 .flex-1 {
@@ -1197,6 +1261,14 @@ video {
   gap: 1.25rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-14 {
+  gap: 3.5rem;
+}
+
 .gap-x-\[20px\] {
   -moz-column-gap: 20px;
        column-gap: 20px;
@@ -1264,6 +1336,10 @@ video {
 
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .rounded-bl-\[22px\] {
@@ -1409,6 +1485,10 @@ video {
   background-color: rgb(32 32 32 / 0.6);
 }
 
+.bg-theme_black\/50 {
+  background-color: rgb(32 32 32 / 0.5);
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1435,6 +1515,10 @@ video {
 
 .fill-primary {
   fill: #E50512;
+}
+
+.fill-theme_white {
+  fill: #FFFFFF;
 }
 
 .object-cover {
@@ -1553,6 +1637,11 @@ video {
 .py-\[9px\] {
   padding-top: 9px;
   padding-bottom: 9px;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .pb-\[50px\] {
