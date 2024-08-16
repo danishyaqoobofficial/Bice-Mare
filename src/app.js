@@ -36,9 +36,7 @@ valueDisplays.forEach((valueDisplay) => {
     } , duration)
 })
 
-
 // FAQs
-
 
 function FAQ(e) {
     let mainDiv = e.closest('.main_div');
