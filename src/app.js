@@ -20,21 +20,24 @@ function cancle_video_popup() {
 
 // Counting Numbers
 
-let valueDisplays = document.querySelectorAll('.num');
-let interval = 1600;
+const counters = document.querySelectorAll('.value');
+const speed = 400;
 
-valueDisplays.forEach((valueDisplay) => {
-    let startValue = 0;
-    let endValue = parseInt(valueDisplay.getAttribute("data-valur"));
-    let duration = Math.floor(interval / endValue);
-    let counter = setInterval(function() {
-        startValue += 1;
-        valueDisplay.textContent = startValue;
-        if (startValue == endValue) {
-            clearInterval(counter);
-        }
-    } , duration)
-})
+counters.forEach( counter => {
+   const animate = () => {
+      const value = +counter.getAttribute('akhi');
+      const data = +counter.innerText;
+     
+      const time = value / speed;
+     if(data < value) {
+          counter.innerText = Math.ceil(data + time);
+          setTimeout(animate, 1);
+        }else{
+          counter.innerText = value;
+        } 
+   }
+   animate();
+});
 
 // FAQs
 
