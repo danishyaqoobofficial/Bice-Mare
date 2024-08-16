@@ -44,6 +44,8 @@ counters.forEach( counter => {
 function FAQ(e) {
     let mainDiv = e.closest('.main_div');
     let faqAnswer = mainDiv.querySelector('.answer');
+    let rotate_svg = mainDiv.querySelector('.rotate_svg');
     
     faqAnswer.classList.toggle('!block');
+    rotate_svg.classList.toggle('custom_rotate');
 }
