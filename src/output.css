@@ -784,6 +784,10 @@ video {
   margin-top: 10rem;
 }
 
+.mt-28 {
+  margin-top: 7rem;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -915,6 +919,18 @@ video {
   height: 600px;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[380px\] {
+  height: 380px;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -957,6 +973,10 @@ video {
 
 .w-\[100vw\] {
   width: 100vw;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .max-w-\[1220px\] {
@@ -1202,6 +1222,18 @@ video {
   border-top-right-radius: 30px;
 }
 
+.rounded-br-\[22px\] {
+  border-bottom-right-radius: 22px;
+}
+
+.rounded-br-2xl {
+  border-bottom-right-radius: 1rem;
+}
+
+.rounded-bl-2xl {
+  border-bottom-left-radius: 1rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1439,6 +1471,31 @@ video {
   padding-right: 1.5rem;
 }
 
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -1543,6 +1600,47 @@ video {
   line-height: 1.75rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-\[70px\] {
+  font-size: 70px;
+}
+
+.text-\[90px\] {
+  font-size: 90px;
+}
+
+.text-\[84px\] {
+  font-size: 84px;
+}
+
+.text-\[82px\] {
+  font-size: 82px;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -1553,6 +1651,26 @@ video {
 
 .leading-\[50px\] {
   line-height: 50px;
+}
+
+.leading-\[60px\] {
+  line-height: 60px;
+}
+
+.leading-\[8s0px\] {
+  line-height: 8s0px;
+}
+
+.leading-\[80px\] {
+  line-height: 80px;
+}
+
+.leading-\[82px\] {
+  line-height: 82px;
+}
+
+.leading-\[90px\] {
+  line-height: 90px;
 }
 
 .tracking-wide {
