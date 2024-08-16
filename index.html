@@ -9,34 +9,45 @@
     <title>Bice Mare</title>
 </head>
 <body>
-    <div class="flex items-center justify-center py-2 font-normal bg-primary text-theme_white font-sans">
-        Enjoy a delicious meal with us and get 20% off your total bill this New year!
+    <div class="py-[10px] bg-primary">
+        <p class="text-center font-normal text-theme_white text-sm sm:text-[16px] font-sans line-clamp-1 px-4">
+            Enjoy a delicious meal with us and get 20% off your total bill this New year!
+        </p>
     </div>
-    <header class="border-b border-grey2 py-5">
-        <div class="max-w-[1700px] mx-auto flex items-center justify-between px-20">
-            <div class="flex items-center gap-20 flex-1">
-                <div class="flex items-center gap-11">
-                    <a href="/" class="text-xl cursor-pointer text-theme_black font-normal transition-all tracking-wide">Home</a>
-                    <a href="/src/pages/manu.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Menu</a>
-                    <a href="/src/pages/gallery.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Gallery</a>
-                    <a href="/src/pages/membership.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Memberships</a>
-                    <a href="/src/pages/contact-us.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Contact</a>
+    <header class="border-b border-grey2 py-3 sm:py-4 lg:py-5">
+        <div class="max-w-[1700px] mx-auto flex items-center justify-between px-6 sm:px-10 md:px-12 lg:px-20 gap-10 xl:flex-row-reverse">
+            <div class="xl:block hidden flex-1">
+                <div class="flex items-center gap-5 justify-end">
+                    <div class="flex items-center gap-[20px]">
+                        <a href=""><img class="h-[26px]" src="/assets/images/facebook.png" alt=""></a>
+                        <a href=""><img class="h-[26px]" src="/assets/images/instagram.png" alt=""></a>
+                        <a href=""><img class="h-[26px]" src="/assets/images/whatsapp.png" alt=""></a>
+                    </div>
+                    <button class="border border-primary transition-all hover:bg-primary hover:text-theme_white tracking-wide flex items-center justify-center rounded-lg text-theme_black px-[17px] text-lg py-[7px] cursor-pointer">
+                        Reservation
+                    </button>
                 </div>
             </div>
-            <a href="/"><img src="/assets/images/logo.png" class="h-[52px]" alt=""></a>
-            <div class="flex items-center gap-5 flex-1 justify-end">
-                <div class="flex items-center gap-[20px]">
-                    <a href=""><img class="h-[26px]" src="/assets/images/facebook.png" alt=""></a>
-                    <a href=""><img class="h-[26px]" src="/assets/images/instagram.png" alt=""></a>
-                    <a href=""><img class="h-[26px]" src="/assets/images/whatsapp.png" alt=""></a>
+            <a href="/"><img src="/assets/images/logo.png" class="h-11 sm:h-[52px]" alt=""></a>
+            <div class="flex-1 hidden lg:block">
+                <div class="flex items-center gap-20">
+                    <div class="flex items-center gap-11">
+                        <a href="/" class="text-xl cursor-pointer text-theme_black font-normal transition-all tracking-wide">Home</a>
+                        <a href="/src/pages/manu.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Menu</a>
+                        <a href="/src/pages/gallery.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Gallery</a>
+                        <a href="/src/pages/membership.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Memberships</a>
+                        <a href="/src/pages/contact-us.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Contact</a>
+                    </div>
                 </div>
-                <button class="border border-primary transition-all hover:bg-primary hover:text-theme_white tracking-wide flex items-center justify-center rounded-lg text-theme_black px-[17px] text-lg py-[7px] cursor-pointer">
-                    Reservation
-                </button>
+            </div>
+            <div class="lg:hidden block" onclick="open_hamburger()">
+                <span class="flex items-center justify-center cursor-pointer">
+                    <svg class="fill-[#000] h-6 sm:h-7 w-6 sm:w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+                </span>
             </div>
         </div>
     </header>
-    <section class="pt-20 pb-12 px-20 max-w-[1700px] mx-auto">
+    <!-- <section class="pt-20 pb-12 px-20 max-w-[1700px] mx-auto">
         <p class="text-center text-grey1 text-xl font-normal">Luxury & Freshness</p>
         <h2 class="text-center font-light text-[80px] mt-3 text-theme_black tracking-wide">The Pleasure of <span class="text-primary">Tasty</span> Delight</h2>
         <p class="text-grey1 text-lg text-center font-sans max-w-[730px] mx-auto font-light mt-[6px]">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.</p>
@@ -66,7 +77,7 @@
                     See Menu
                 </button>
             </div>
-            <div class="flex-1 flex items-center justify-center gap-4">
+            <div class="flex-1 flex items-center justify-end gap-4 px-12">
                 <div class="h-96 w-64 rounded-lg overflow-hidden translate-y-24">
                     <img class="h-full w-full" src="/assets/images/freshFood2.png" alt="">
                 </div>
@@ -172,7 +183,7 @@
     </section>
     <section class="mt-48 px-20">
         <div class="max-w-[1700px] w-full mx-auto border border-grey2 rounded-2xl flex">
-            <div class="flex-1 flex items-center justify-center gap-4">
+            <div class="flex-1 flex items-center justify-start px-12 gap-4">
                 <div class="h-96 w-64 rounded-lg overflow-hidden translate-y-24">
                     <img class="h-full w-full" src="/assets/images/opening1.png" alt="">
                 </div>
@@ -524,83 +535,83 @@
                 </div>
             </div>
         </div>
-    </section>
-    <footer class="bg-theme_black w-full py-[70px]">
-        <div class="max-w-[1700px] mx-auto px-20 grid grid-cols-5 ">
-            <div class="col-span-2">
+    </section> -->
+    <footer class="bg-theme_black w-full py-10 md:py-14 lg:py-[70px]">
+        <div class="max-w-[1700px] mx-auto px-6 sm:px-10 md:px-12 lg:px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-12 xl:gap-0 ">
+            <div class="sm:col-span-2 xl:pr-8">
                 <a href="/"><img src="/assets/images/logo_white.png" class="h-[90px]" alt=""></a>
-                <p class="text-theme_white text-lg mt-[14px] font-sans font-light">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem</p>
+                <p class="text-theme_white text-[15px] sm:text-md md:text-lg mt-[14px] font-sans font-light">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem</p>
                 <div class="mt-[40px]">
-                    <h3 class="text-[31px] font-light text-theme_white">Opening hours</h3>
+                    <h3 class="text-2xl sm:text-3xl md:text-[32px] font-light text-theme_white">Opening hours</h3>
                     <div class="flex gap-[36px] flex-wrap mt-[32px]">
                         <div>
-                            <h4 class="text-theme_white font-normal text-xl">Monday - Friday</h4>
-                            <p class="text-[#D2D2D2] font-light font-sans mt-[11px]">12:00 - 14:45</p>
+                            <h4 class="text-theme_white font-normal text-md sm:text-lg md:text-xl">Monday - Friday</h4>
+                            <p class="text-[#D2D2D2] font-light font-sans text-sm sm:text-lg mt-[10px] md:mt-[11px]">12:00 - 14:45</p>
                         </div>
                         <div>
-                            <h4 class="text-theme_white font-normal text-xl">Saturday</h4>
-                            <p class="text-[#D2D2D2] font-light font-sans mt-[11px]">12:00 - 14:45</p>
+                            <h4 class="text-theme_white font-normal text-md sm:text-lg md:text-xl">Saturday</h4>
+                            <p class="text-[#D2D2D2] font-light font-sans text-sm sm:text-lg mt-[10px] md:mt-[11px]">12:00 - 14:45</p>
                         </div>
                         <div>
-                            <h4 class="text-theme_white font-normal text-xl">Sunday</h4>
-                            <p class="text-[#D2D2D2] font-light font-sans mt-[11px]">12:00 - 14:45</p>
+                            <h4 class="text-theme_white font-normal text-md sm:text-lg md:text-xl">Sunday</h4>
+                            <p class="text-[#D2D2D2] font-light font-sans text-sm sm:text-lg mt-[10px] md:mt-[11px]">12:00 - 14:45</p>
                         </div>
                     </div>
-                    <div class="flex gap-[46px] flex-wrap mt-[50px]">
+                    <div class="flex gap-8 sm:gap-[46px] flex-wrap mt-[50px]">
                         <div>
                             <div class="flex items-center gap-[16px]">
                                 <span class="flex items-center justify-center rounded-full bg-primary h-[40px] w-[40px]">
                                     <svg class="fill-[#fff] size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
                                 </span>
-                                <h4 class="text-theme_white font-light text-xl">Phone</h4>
+                                <h4 class="text-theme_white font-light text-md sm:text-lg md:text-xl">Phone</h4>
                             </div>
-                            <p class="text-primary text-lg font-light font-sans mt-[9px] cursor-pointer">+971 4 423 0932</p>
+                            <p class="text-primary text-[15px] sm:text-md md:text-lg font-light font-sans mt-[9px] cursor-pointer">+971 4 423 0932</p>
                         </div>
                         <div>
                             <div class="flex items-center gap-[16px]">
                                 <span class="flex items-center justify-center rounded-full bg-primary h-[40px] w-[40px]">
                                     <svg class="fill-[#fff] h-[22px] w-[22px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
                                 </span>
-                                <h4 class="text-theme_white font-light text-xl">Email</h4>
+                                <h4 class="text-theme_white font-light text-md sm:text-lg md:text-xl">Email</h4>
                             </div>
-                            <p class="text-primary text-lg font-light font-sans mt-[9px] cursor-pointer">Example@gmail.com</p>
+                            <p class="text-primary text-[15px] sm:text-md md:text-lg font-light font-sans mt-[9px] cursor-pointer">Example@gmail.com</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div>
-                <h3 class="text-[32px] font-light text-theme_white">Navigation</h3>
+                <h3 class="text-2xl sm:text-3xl md:text-[32px] font-light text-theme_white">Navigation</h3>
                 <div class="mt-[26px]">
-                    <p class="mt-[19px] text-lg text-theme_white cursor-pointer"><a href="/">Home</a></p>
-                    <p class="mt-[19px] text-lg text-theme_white cursor-pointer"><a href="./src/pages/about-us.html">About Us</a></p>
-                    <p class="mt-[19px] text-lg text-theme_white cursor-pointer"><a href="./src/pages/manu.html">Menu</a></p>
-                    <p class="mt-[19px] text-lg text-theme_white cursor-pointer"><a href="./src/pages/about-us.html">Gallery</a></p>
-                    <p class="mt-[19px] text-lg text-theme_white cursor-pointer"><a href="">Blogs</a></p>
-                    <p class="mt-[19px] text-lg text-theme_white cursor-pointer"><a href="./src/pages/membership.html">Membership</a></p>
-                    <p class="mt-[19px] text-lg text-theme_white cursor-pointer"><a href="./src/pages/contact-us.html">Contact Us</a></p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="/">Home</a></p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="./src/pages/about-us.html">About Us</a></p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="./src/pages/manu.html">Menu</a></p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="./src/pages/about-us.html">Gallery</a></p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="">Blogs</a></p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="./src/pages/membership.html">Membership</a></p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="./src/pages/contact-us.html">Contact Us</a></p>
                 </div>
             </div>
             <div>
-                <h3 class="text-[32px] font-light text-theme_white">Our Menu</h3>
+                <h3 class="text-2xl sm:text-3xl md:text-[32px] font-light text-theme_white">Our Menu</h3>
                 <div class="mt-[26px]">
-                    <p class="mt-[19px] text-lg text-theme_white cursor-pointer">Chicken Olive Pasta</p>
-                    <p class="mt-[19px] text-lg text-theme_white cursor-pointer">Spaghettis with lobia </p>
-                    <p class="mt-[19px] text-lg text-theme_white cursor-pointer">Pasta with Tomato</p>
-                    <p class="mt-[19px] text-lg text-theme_white cursor-pointer">Pasta with green leaf</p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer">Chicken Olive Pasta</p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer">Spaghettis with lobia </p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer">Pasta with Tomato</p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer">Pasta with green leaf</p>
                     <div class="flex items-center gap-[5px] mt-[16px]">
-                        <p class="text-primary text-[19px] cursor-pointer">See More</p>
+                        <p class="text-primary text-lg md:text-[19px] cursor-pointer">See More</p>
                         <svg class="fill-primary h-[18px] w-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>                              
                     </div>
                 </div>
             </div>
             <div>
-                <h3 class="text-[32px] font-light text-theme_white">Follow Us</h3>
+                <h3 class="text-2xl sm:text-3xl md:text-[32px] font-light text-theme_white">Follow Us</h3>
                 <div class="flex items-center gap-[16px] mt-[26px]">
                     <a href=""><img class="h-[26px]" src="/assets/images/facebook.png" alt=""></a>
                     <a href=""><img class="h-[26px]" src="/assets/images/instagram.png" alt=""></a>
                     <a href=""><img class="h-[26px]" src="/assets/images/whatsapp.png" alt=""></a>
                 </div>
-                <h3 class="text-[35px] font-light text-theme_white mt-[22px]">Our Location</h3>
+                <h3 class="text-2xl sm:text-3xl md:text-[32px] font-light text-theme_white mt-[22px]">Our Location</h3>
                 <div class="mt-[22px]">
                     <div class="w-full flex-1">
                         <iframe class="rounded-[18px] w-full h-[180px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.2398459680885!2d55.2739340759969!3d25.19513283178314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f68299ccbf28d%3A0x93d89847470ba3e0!2sBice%20Mare%20Restaurant!5e0!3m2!1sen!2s!4v1723538823325!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -609,12 +620,42 @@
             </div>
         </div>
     </footer>
-    <div class="flex items-center justify-center py-[8px] text-[16px] font-normal bg-primary text-theme_white font-sans">
-        Copyright 2024, All Rights Reserved 
+    <div class="py-[10px] bg-primary">
+        <p class="text-center font-normal text-theme_white text-sm sm:text-[16px] font-sans line-clamp-1 px-4">
+            Copyright 2024, All Rights Reserved 
+        </p>
     </div>
 
     <!-- All Popups -->
     
+    <section class="hidden h-[100vh] w-full bg-theme_black/60 fixed inset-0" id="main_hamburger">
+        <div class="flex items-center justify-end h-full w-full">
+            <div class="max-w-96 w-[83%] bg-theme_white h-full">
+                <div class="flex items-center justify-end p-6">
+                    <span class="flex items-center justify-center cursor-pointer" onclick="close_hamburger()">
+                        <svg class="fill-[#202020] h-7 w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </span>
+                </div>
+                <div class="w-full flex flex-col gap-[6px]">
+                    <div class="px-5 py-3 hover:bg-primary hover:text-theme_white transition-all cursor-pointer">
+                        Home
+                    </div>
+                    <div class="px-5 py-3 hover:bg-primary hover:text-theme_white transition-all cursor-pointer ">
+                        Menu
+                    </div>
+                    <div class="px-5 py-3 hover:bg-primary hover:text-theme_white transition-all cursor-pointer ">
+                        Gallery
+                    </div>
+                    <div class="px-5 py-3 hover:bg-primary hover:text-theme_white transition-all cursor-pointer ">
+                        Memberships
+                    </div>
+                    <div class="px-5 py-3 hover:bg-primary hover:text-theme_white transition-all cursor-pointer ">
+                        Contact
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <section class="h-full w-full fixed inset-0 z-40 transition-all hidden bg-theme_black/80" id="video_main_popup" ondblclick="close_video_popup()">
         <span class="absolute top-5 right-5 cursor-pointer" onclick="cancle_video_popup()">

@@ -788,6 +788,10 @@ video {
   margin-top: 7rem;
 }
 
+.mt-\[10px\] {
+  margin-top: 10px;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -809,8 +813,26 @@ video {
   -webkit-line-clamp: 6;
 }
 
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.\!line-clamp-1 {
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 1 !important;
+}
+
 .\!block {
   display: block !important;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -931,6 +953,22 @@ video {
   height: 2rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-11 {
+  height: 2.75rem;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -979,6 +1017,30 @@ video {
   width: 2rem;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[83\%\] {
+  width: 83%;
+}
+
 .max-w-\[1220px\] {
   max-width: 1220px;
 }
@@ -998,6 +1060,10 @@ video {
 .max-w-max {
   max-width: -moz-max-content;
   max-width: max-content;
+}
+
+.max-w-96 {
+  max-width: 24rem;
 }
 
 .flex-1 {
@@ -1069,6 +1135,18 @@ video {
 
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
 }
 
 .flex-col {
@@ -1171,6 +1249,22 @@ video {
   gap: 0.5rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-\[6px\] {
+  gap: 6px;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-x-\[20px\] {
   -moz-column-gap: 20px;
        column-gap: 20px;
@@ -1182,6 +1276,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .rounded-2xl {
@@ -1316,6 +1414,23 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-theme_black\/30 {
+  background-color: rgb(32 32 32 / 0.3);
+}
+
+.bg-theme_black\/40 {
+  background-color: rgb(32 32 32 / 0.4);
+}
+
+.bg-theme_black\/50 {
+  background-color: rgb(32 32 32 / 0.5);
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1344,6 +1459,14 @@ video {
   fill: #FFFFFF;
 }
 
+.fill-\[\#000\] {
+  fill: #000;
+}
+
+.fill-\[\#202020\] {
+  fill: #202020;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1363,6 +1486,14 @@ video {
 
 .p-\[5px\] {
   padding: 5px;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-10 {
@@ -1510,6 +1641,26 @@ video {
   padding-bottom: 7rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -1536,6 +1687,14 @@ video {
 
 .pt-\[19px\] {
   padding-top: 19px;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
 }
 
 .text-center {
@@ -1655,6 +1814,11 @@ video {
   font-size: 82px;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -1731,6 +1895,11 @@ video {
   z-index: 30;
 }
 
+.hover\:border-primary:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 5 18 / var(--tw-border-opacity));
+}
+
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(229 5 18 / var(--tw-bg-opacity));
@@ -1744,4 +1913,161 @@ video {
 .hover\:text-theme_white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .sm\:h-\[52px\] {
+    height: 52px;
+  }
+
+  .sm\:h-7 {
+    height: 1.75rem;
+  }
+
+  .sm\:w-7 {
+    width: 1.75rem;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:gap-\[46px\] {
+    gap: 46px;
+  }
+
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .sm\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .sm\:text-\[16px\] {
+    font-size: 16px;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .md\:mt-\[11px\] {
+    margin-top: 11px;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:gap-\[46px\] {
+    gap: 46px;
+  }
+
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .md\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .md\:text-\[32px\] {
+    font-size: 32px;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-\[19px\] {
+    font-size: 19px;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .lg\:py-\[70px\] {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .xl\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .xl\:gap-0 {
+    gap: 0px;
+  }
+
+  .xl\:pr-8 {
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:block {
+    display: block;
+  }
+
+  .\32xl\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
 }

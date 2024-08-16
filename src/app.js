@@ -1,5 +1,6 @@
 let value = true;
 let video_play_button = document.getElementById('video_play_button');
+let main_hamburger = document.getElementById('main_hamburger');
 
 video_play_button.addEventListener('click', () => {
     let video_main_popup = document.getElementById('video_main_popup');
@@ -12,7 +13,7 @@ video_play_button.addEventListener('click', () => {
 function cancle_video_popup() {
     let video_main_popup = document.getElementById('video_main_popup');
     if (video_main_popup) {
-        video_main_popup.classList.remove('!block')
+        video_main_popup.classList.remove('!block');
     }
 }
 
@@ -48,4 +49,14 @@ function FAQ(e) {
     
     faqAnswer.classList.toggle('!block');
     rotate_svg.classList.toggle('custom_rotate');
+}
+
+// Hamburger
+
+
+function open_hamburger() {
+        main_hamburger.classList.add('!block');
+}
+function close_hamburger() {
+    main_hamburger.classList.remove('!block');
 }
