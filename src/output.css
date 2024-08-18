@@ -780,6 +780,10 @@ video {
   margin-top: 9px;
 }
 
+.mt-60 {
+  margin-top: 15rem;
+}
+
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -1121,6 +1125,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .flex-wrap {
@@ -1804,6 +1812,10 @@ video {
     margin-top: 90px;
   }
 
+  .sm\:mt-60 {
+    margin-top: 15rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -2268,6 +2280,10 @@ video {
 
   .xl\:mt-60 {
     margin-top: 15rem;
+  }
+
+  .xl\:mt-48 {
+    margin-top: 12rem;
   }
 
   .xl\:block {
