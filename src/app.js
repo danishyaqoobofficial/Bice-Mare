@@ -17,8 +17,6 @@ function cancle_video_popup() {
     }
 }
 
-
-
 // Counting Numbers
 
 const counters = document.querySelectorAll('.value');
@@ -59,4 +57,29 @@ function open_hamburger() {
 }
 function close_hamburger() {
     main_hamburger.classList.remove('!block');
-}
+};
+
+// form validation
+
+function formSubmit() {
+    let value = true;
+
+    const fields = [
+        { id: 'first_name', errorId: 'first_name_error' },
+        { id: 'last_name', errorId: 'last_name_error' },
+        { id: 'email', errorId: 'email_error' },
+        { id: 'message', errorId: 'message_error' },
+    ];
+
+
+    fields.forEach(field => {
+        const input = document.getElementById(field.id);
+        const error = document.getElementById(field.errorId);
+        if (input.value.trim() === '') {
+            error.classList.remove('hidden');
+            value = false;
+        } else {
+            error.classList.add('hidden');
+        }
+    });
+};
