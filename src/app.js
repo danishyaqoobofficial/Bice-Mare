@@ -74,7 +74,6 @@ function formSubmit() {
         { id: 'message', errorId: 'message_error' },
     ];
 
-
     fields.forEach(field => {
         const input = document.getElementById(field.id);
         const error = document.getElementById(field.errorId);
