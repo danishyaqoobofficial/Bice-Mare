@@ -1,12 +1,14 @@
 let value = true;
 let video_play_button = document.getElementById('video_play_button');
 let main_hamburger = document.getElementById('main_hamburger');
+let video = document.getElementById('video');
 
 video_play_button.addEventListener('click', () => {
     let video_main_popup = document.getElementById('video_main_popup');
 
     if (video_play_button) {
         video_main_popup.classList.add('!block');
+        video.play();
     }
 })
 
@@ -14,6 +16,7 @@ function cancle_video_popup() {
     let video_main_popup = document.getElementById('video_main_popup');
     if (video_main_popup) {
         video_main_popup.classList.remove('!block');
+        video.pause();
     }
 }
 
