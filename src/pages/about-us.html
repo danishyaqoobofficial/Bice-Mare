@@ -31,11 +31,11 @@
             <div class="flex-1 hidden lg:block">
                 <div class="flex items-center gap-20">
                     <div class="flex items-center gap-11">
-                        <a href="/" class="text-xl cursor-pointer text-theme_black font-normal transition-all tracking-wide">Home</a>
-                        <a href="/src/pages/manu.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Menu</a>
-                        <a href="/src/pages/gallery.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Gallery</a>
-                        <a href="/src/pages/membership.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Memberships</a>
-                        <a href="/src/pages/contact-us.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Contact</a>
+                        <a href="/" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Home</a>
+                        <a href="./manu.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Menu</a>
+                        <a href="./gallery.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Gallery</a>
+                        <a href="./membership.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Memberships</a>
+                        <a href="./contact-us.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Contact</a>
                     </div>
                 </div>
             </div>
@@ -55,40 +55,55 @@
             </div>
         </div>
     </header>
-    <section class="pt-20 pb-12 px-20 max-w-[1700px] mx-auto">
-        <p class="text-center text-grey1 text-xl font-normal">Best Quality</p>
-        <h2 class="text-center font-light text-[80px] mt-2 text-theme_black tracking-wide">About Us</h2>
+    <section class="pt-20 pb-12 px-6 sm:px-10 md:px-12 lg:px-20 max-w-[1700px] mx-auto">
+        <p class="text-center text-grey1 text-lg sm:text-xl font-normal">Best Quality</p>
+        <h2 class="text-center font-light text-4xl sm:text-6xl md:text-7xl lg:text-[80px] leading-[50px] md:leading-[110px] mt-3 text-theme_black tracking-wide">About Us</h2>
     </section>
-    <section class="bg-cover bg-center bg-no-repeat w-full h-[600px]" style="background-image: url(/assets/images/aboutusbanner.png);"></section>
-    <section class="mt-40 border-y border-grey2 py-20">
-        <div class="grid grid-cols-4 max-w-[1700px] mx-auto px-20">
-            <div class="flex items-center justify-center flex-col border-r border-grey2">
-                <img src="/assets/images/detail1.png" class="h-40" alt="">
-                <h3 class="text-theme_black font-normal text-[38px] mt-6 flex"><p class="value" akhi="4000">0</p>+</h3>
-                <p class="text-grey1 text-2xl font-light">Happy Customers</p>
+    <section class="bg-cover bg-center bg-no-repeat w-full h-[480px] sm:h-[560px] md:h-[600px]" style="background-image: url(/assets/images/aboutusbanner.png);"></section>
+    <section class="mt-20 sm:mt-40 border-y border-grey2 py-10 sm:py-12 md:py-20">
+        <div class="flex gap-10 sm:gap-6 max-w-[1700px] mx-auto w-full px-6 sm:px-10 md:px-12 lg:px-20 lg:flex-row flex-col">
+            <div class="flex gap-10 sm:gap-6 flex-1 w-full sm:flex-row flex-col">
+                <div class="flex items-center justify-center flex-col flex-1 w-full">
+                    <img src="/assets/images/detail1.png" class="h-40" alt="">
+                    <h3 class="text-theme_black font-normal text-3xl sm:text-[38px] mt-6 flex items-center justify-center">
+                        <span class="value" akhi="4000">0</span>+
+                    </h3>
+                    <p class="text-grey1 text-lg sm:text-2xl font-light text-center">Happy Customers</p>
+                </div>
+                <div class="w-[1px] bg-grey2 h-auto hidden sm:block"></div>
+                <div class="flex items-center justify-center flex-col flex-1 w-full">
+                    <img src="/assets/images/detail2.png" class="h-40" alt="">
+                    <h3 class="text-theme_black font-normal text-3xl sm:text-[38px] mt-6 flex items-center justify-center">
+                        <span class="value" akhi="100">0</span>+
+                    </h3>
+                    <p class="text-grey1 text-lg sm:text-2xl font-light text-center">Dishes Served Daily</p>
+                </div>
             </div>
-            <div class="flex items-center justify-center flex-col border-r border-grey2">
-                <img src="/assets/images/detail2.png" class="h-40" alt="">
-                <h3 class="text-theme_black font-normal text-[38px] mt-6 flex"><p class="value" akhi="100">0</p>+</h3>
-                <p class="text-grey1 text-2xl font-light">Dishes Served Daily</p>
+            <div class="w-[1px] bg-grey2 h-auto hidden lg:block"></div>
+            <div class="flex gap-10 sm:gap-6 flex-1 w-full sm:flex-row flex-col">
+                <div class="flex items-center justify-center flex-col flex-1 w-full">
+                    <img src="/assets/images/detail3.png" class="h-40" alt="">
+                    <h3 class="text-theme_black font-normal text-3xl sm:text-[38px] mt-6 flex items-center justify-center">
+                        <span class="value" akhi="25">0</span>+
+                    </h3>
+                    <p class="text-grey1 text-lg sm:text-2xl font-light text-center">Years of Excellence</p>
+                </div>
+                <div class="w-[1px] bg-grey2 h-auto hidden sm:block"></div>
+                <div class="flex items-center justify-center flex-col flex-1 w-full">
+                    <img src="/assets/images/detail4.png" class="h-40" alt="">
+                    <h3 class="text-theme_black font-normal text-3xl sm:text-[38px] mt-6 flex items-center justify-center">
+                        <span class="value" akhi="50">0</span>+
+                    </h3>
+                    <p class="text-grey1 text-lg sm:text-2xl font-light text-center">Award-Winning Recipes</p>
+                </div>
             </div>
-            <div class="flex items-center justify-center flex-col border-r border-grey2">
-                <img src="/assets/images/detail3.png" class="h-40" alt="">
-                <h3 class="text-theme_black font-normal text-[38px] mt-6 flex"><p class="value" akhi="25">0</p>+</h3>
-                <p class="text-grey1 text-2xl font-light">Years of Excellence</p>
-            </div>
-            <div class="flex items-center justify-center flex-col">
-                <img src="/assets/images/detail4.png" class="h-40" alt="">
-                <h3 class="text-theme_black font-normal text-[38px] mt-6 flex"><p class="value" akhi="50">0</p>+</h3>
-                <p class="text-grey1 text-2xl font-light">Award-Winning Recipes</p>
-            </div>
-        </div>
+        </div>        
     </section>
-    <section class="max-w-[1700px] mx-auto px-20 py-28 overflow-hidden">
-        <p class="text-center text-grey1 text-xl font-normal">About Us</p>
-        <h2 class="text-center font-normal text-[46px] mt-3 text-theme_black">We Serve <span class="text-primary">Royalty Flavors</span></h2>
-        <p class="mt-4 text-grey1 line-clamp-6 font-light font-sans text-center">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.</p>
-        <div class="flex gap-5 mt-20">
+    <section class="max-w-[1700px] mx-auto px-6 sm:px-10 md:px-12 lg:px-20 py-28 overflow-hidden">
+        <p class="text-center text-grey1 text-lg sm:text-xl font-normal">About Us</p>
+        <h2 class="text-center font-light text-3xl md:text-4xl lg:text-[46px] leading-[50px] md:leading-[70px] mt-3 text-theme_black tracking-wide">We Serve <span class="text-primary">Royalty Flavors</span></h2>
+        <p class="mt-4 text-grey1 line-clamp-6 font-light font-sans text-center text-md sm:text-lg">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.</p>
+        <div class="flex gap-5 mt-20 flex-col lg:flex-row">
             <div class="h-[380px] flex-1 overflow-hidden rounded-3xl">
                 <img class="h-full w-full" src="/assets/images/about1.png" alt="">
             </div>
@@ -96,16 +111,16 @@
                 <img class="h-full w-full" src="/assets/images/about2.png" alt="">
             </div>
         </div>
-        <div class="mt-20 flex">
+        <div class="mt-20 flex flex-col lg:flex-row gap-10 lg:gap-7">
             <div class="flex-1">
-                <p class="text-grey1 text-xl font-normal">Fresh Foods </p>
-                <h2 class="font-light text-[82px] mt-3 text-theme_black leading-[90px]">The Pleasure of All Delicious Things</h2>
+                <p class="text-grey1 text-lg sm:text-xl font-normal">Fresh Foods </p>
+                <h2 class="font-light text-4xl md:text-6xl lg:text-7xl mt-3 text-theme_black ">The Pleasure of All Delicious Things</h2>
                 <button class="custom_shadow border tracking-wide border-primary flex items-center justify-center rounded-lg px-[22px] text-xl py-[8px] cursor-pointer bg-primary text-theme_white mt-10 font-normal">
                     See Menu
                 </button>
             </div>
             <div class="flex-1">
-                <p class="text-grey1 text-lg font-sans font-light">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing Class aptent taciti sociosqu.Jorem ipsum dolor sit am   et, consectetur adipiscing Class aptent taciti sociosqu.Jorem ipsum dolor sit am   et, consectetur adipiscing </p>
+                <p class="text-grey1 font-light font-sans text-md sm:text-lg">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing Class aptent taciti sociosqu.Jorem ipsum dolor sit am   et, consectetur adipiscing Class aptent taciti sociosqu.Jorem ipsum dolor sit am   et, consectetur adipiscing </p>
                 <div class="mt-6">
                     <div class="flex items-center gap-4 mt-2">
                         <span class="flex items-center justify-center">
@@ -113,7 +128,7 @@
                                 <path d="M18 2.00009L6 14.0001L0.5 8.50009L1.91 7.09009L6 11.1701L16.59 0.590088L18 2.00009Z" fill="black"/>
                             </svg>                                
                         </span>
-                        <p class="text-grey1 text-lg font-sans font-light">Jorem ipsum dolor sit amet, consectetur</p>
+                        <p class="text-grey1 text-md sm:text-lg font-sans font-light line-clamp-1">Jorem ipsum dolor sit amet, consectetur</p>
                     </div>
                     <div class="flex items-center gap-4 mt-2">
                         <span class="flex items-center justify-center">
@@ -121,7 +136,7 @@
                                 <path d="M18 2.00009L6 14.0001L0.5 8.50009L1.91 7.09009L6 11.1701L16.59 0.590088L18 2.00009Z" fill="black"/>
                             </svg>                                
                         </span>
-                        <p class="text-grey1 text-lg font-sans font-light">Jorem ipsum dolor sit amet, consectetur</p>
+                        <p class="text-grey1 text-md sm:text-lg font-sans font-light line-clamp-1">Jorem ipsum dolor sit amet, consectetur</p>
                     </div>
                     <div class="flex items-center gap-4 mt-2">
                         <span class="flex items-center justify-center">
@@ -129,52 +144,52 @@
                                 <path d="M18 2.00009L6 14.0001L0.5 8.50009L1.91 7.09009L6 11.1701L16.59 0.590088L18 2.00009Z" fill="black"/>
                             </svg>                                
                         </span>
-                        <p class="text-grey1 text-lg font-sans font-light">Jorem ipsum dolor sit amet, consectetur</p>
+                        <p class="text-grey1 text-md sm:text-lg font-sans font-light line-clamp-1">Jorem ipsum dolor sit amet, consectetur</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-theme_black w-full py-[70px] mt-32">
-        <div class="max-w-[1700px] mx-auto px-20">
-            <p class="text-center text-grey2 text-xl font-normal">Reservation</p>
-            <h2 class="text-center font-normal text-[46px] mt-3 text-theme_white">Book Your <span class="text-primary">Reservation</span> Today</h2>
-            <p class="text-theme_white text-lg text-center font-sans max-w-[730px] mx-auto font-light mt-3">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.</p>
+    <section class="bg-theme_black w-full py-[70px]">
+        <div class="max-w-[1700px] mx-auto px-6 sm:px-10 md:px-12 lg:px-20">
+            <p class="text-center text-grey2 text-lg sm:text-xl font-normal">Reservation</p>
+            <h2 class="text-center font-normal text-3xl sm:text-4xl md:text-[46px] mt-3 text-theme_white">Book Your <span class="text-primary">Reservation</span> Today</h2>
+            <p class="text-theme_white text-md sm:text-lg text-center font-sans max-w-[730px] mx-auto font-light mt-3">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.</p>
             <button class="custom_shadow border tracking-wide border-primary flex items-center justify-center rounded-lg px-[22px] text-xl py-[8px] cursor-pointer bg-primary text-theme_white mx-auto mt-10 font-normal">
                 Reservation
             </button>
         </div>
     </section>
-    <section class="max-w-[1700px] mx-auto px-20 py-28 overflow-hidden">
-        <p class="text-center text-grey1 text-xl font-normal">Our Team</p>
-        <h2 class="text-center font-normal text-[46px] mt-3 text-theme_black">Our Professional <span class="text-primary">Chefs</span></h2>
-        <div class="grid grid-cols-4 gap-5 mt-16">
+    <section class="max-w-[1700px] mx-auto px-6 sm:px-10 md:px-12 lg:px-20 py-28 overflow-hidden">
+        <p class="text-center text-grey1 text-lg sm:text-xl font-normal">Our Team</p>
+        <h2 class="text-center font-normal text-3xl sm:text-4xl md:text-[46px mt-3 text-theme_black">Our Professional <span class="text-primary">Chefs</span></h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 mt-16">
             <div class="rounded-2xl overflow-hidden">
                 <div class="bg-cover bg-no-repeat bg-center h-[300px] w-full" style="background-image: url(/assets/images/chef1.png);"></div>
                 <div class="border border-grey2 flex flex-col items-center justify-center px-2 py-6 border-t-0 rounded-bl-2xl rounded-br-2xl">
-                    <h4 class="text-3xl font-normal text-theme_black">Jammie Fox</h4>
-                    <p class="text-theme_black font-light text-[26px] mt-1">Head Chef</p>
+                    <h4 class="text-xl text-center sm:text-2xl md:text-3xl font-normal text-theme_black">Jammie Fox</h4>
+                    <p class="text-theme_black font-light text-xl text-center sm:text-2xl md:text-[26px] mt-[6px]">Head Chef</p>
                 </div>
             </div>
             <div class="rounded-2xl overflow-hidden">
                 <div class="bg-cover bg-no-repeat bg-center h-[300px] w-full" style="background-image: url(/assets/images/chef2.png);"></div>
                 <div class="border border-grey2 flex flex-col items-center justify-center px-2 py-6 border-t-0 rounded-bl-2xl rounded-br-2xl">
-                    <h4 class="text-3xl font-normal text-theme_black">Wilson Andre</h4>
-                    <p class="text-theme_black font-light text-[26px] mt-1">Head Chef</p>
+                    <h4 class="text-xl text-center sm:text-2xl md:text-3xl font-normal text-theme_black">Wilson Andre</h4>
+                    <p class="text-theme_black font-light text-xl text-center sm:text-2xl md:text-[26px] mt-[6px]">Head Chef</p>
                 </div>
             </div>
             <div class="rounded-2xl overflow-hidden">
                 <div class="bg-cover bg-no-repeat bg-center h-[300px] w-full" style="background-image: url(/assets/images/chef3.png);"></div>
                 <div class="border border-grey2 flex flex-col items-center justify-center px-2 py-6 border-t-0 rounded-bl-2xl rounded-br-2xl">
-                    <h4 class="text-3xl font-normal text-theme_black">Thomas Stan</h4>
-                    <p class="text-theme_black font-light text-[26px] mt-1">Head Chef</p>
+                    <h4 class="text-xl text-center sm:text-2xl md:text-3xl font-normal text-theme_black">Thomas Stan</h4>
+                    <p class="text-theme_black font-light text-xl text-center sm:text-2xl md:text-[26px] mt-[6px]">Head Chef</p>
                 </div>
             </div>
             <div class="rounded-2xl overflow-hidden">
                 <div class="bg-cover bg-no-repeat bg-center h-[300px] w-full" style="background-image: url(/assets/images/chef4.png);"></div>
                 <div class="border border-grey2 flex flex-col items-center justify-center px-2 py-6 border-t-0 rounded-bl-2xl rounded-br-2xl">
-                    <h4 class="text-3xl font-normal text-theme_black">Tommy Stewart</h4>
-                    <p class="text-theme_black font-light text-[26px] mt-1">Head Chef</p>
+                    <h4 class="text-xl text-center sm:text-2xl md:text-3xl font-normal text-theme_black">Tommy Stewart</h4>
+                    <p class="text-theme_black font-light text-xl text-center sm:text-2xl md:text-[26px] mt-[6px]">Head Chef</p>
                 </div>
             </div>
         </div>
