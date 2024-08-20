@@ -23,11 +23,11 @@ body {
     box-shadow: 0px 4px 6px #26262640;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .swiper2 .swiper-slide-active{
         transform: scale(1.2) !important;
     }
-}
+} */
 
 @media (min-width: 1024px) {
     .swiper2 .swiper-slide-next{
