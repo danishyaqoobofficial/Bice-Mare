@@ -84,4 +84,23 @@ function formSubmit() {
             error.classList.add('hidden');
         }
     });
-};
+
+    const emailField = document.getElementById('email');
+    const emailError = document.getElementById('email_error');
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(emailField.value.trim())) {
+        emailError.classList.remove('hidden');
+        value = false;
+    } else {
+        emailError.classList.add('hidden');
+    }
+
+    if (value) {
+        fields.forEach(field => {
+            document.getElementById(field.id).value = '';
+        });
+
+        alert('Message sent successfully!');
+    }
+}

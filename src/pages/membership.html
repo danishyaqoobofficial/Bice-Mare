@@ -13,7 +13,7 @@
             Enjoy a delicious meal with us and get 20% off your total bill this New year!
         </p>
     </div>
-    <header class="border-b border-grey2 py-3 sm:py-4 lg:py-5">
+    <header class="border-b border-grey2 py-3 sm:py-4 lg:py-5 sticky top-0 z-40 bg-theme_white">
         <div class="max-w-[1700px] mx-auto flex items-center justify-between px-6 sm:px-10 md:px-12 lg:px-20 gap-10 xl:flex-row-reverse">
             <div class="xl:block hidden flex-1">
                 <div class="flex items-center gap-5 justify-end">
@@ -422,17 +422,17 @@
                 <div class="flex sm:gap-4 w-full flex-col sm:flex-row">
                     <div class="flex-1 w-full">
                         <input class="flex-1 w-full rounded-lg border border-primary px-3 py-3 outline-none bg-theme_black font-sans text-theme_white placeholder:text-theme_white" type="text" placeholder="First Name" id="first_name">
-                        <p class="text-primary text-[13px] font-sans font-light mt-[3px] hidden" id="first_name_error">First Name is required</p>
+                        <p class="text-primary text-[13px] font-sans font-light mt-[3px] hidden text-end" id="first_name_error">First Name is required</p>
                     </div>
                     <div class="flex-1 w-full">
                         <input class="flex-1 w-full rounded-lg mt-5 sm:mt-0 border border-primary px-3 py-3 outline-none bg-theme_black font-sans text-theme_white placeholder:text-theme_white" type="text" placeholder="Last Name" id="last_name">
-                        <p class="text-primary text-[13px] font-sans font-light mt-[3px] hidden" id="last_name_error">Last Name is required</p>
+                        <p class="text-primary text-[13px] font-sans font-light mt-[3px] hidden text-end" id="last_name_error">Last Name is required</p>
                     </div>
                 </div>
                 <input class="flex-1 w-full mt-5 rounded-lg border border-primary px-3 py-3 outline-none bg-theme_black font-sans text-theme_white placeholder:text-theme_white" type="email" placeholder="Email" id="email">
-                <p class="text-primary text-[13px] font-sans font-light mt-[3px] hidden" id="email_error">Email is required</p>
+                <p class="text-primary text-[13px] font-sans font-light mt-[3px] hidden text-end" id="email_error">Email is required</p>
                 <textarea class="flex-1 w-full mt-5 rounded-lg border border-primary px-3 py-3 outline-none bg-theme_black font-sans text-theme_white placeholder:text-theme_white h-[220px] resize-none" placeholder="Message" id="message"></textarea>
-                <p class="text-primary text-[13px] font-sans font-light mt-[3px] hidden" id="message_error">Message is required</p>
+                <p class="text-primary text-[13px] font-sans font-light mt-[3px] hidden text-end" id="message_error">Message is required</p>
                 <button class="custom_shadow max-w-max border tracking-wide border-primary flex items-center justify-center rounded-lg px-[22px] text-xl py-[8px] cursor-pointer bg-primary text-theme_white mx-auto mt-[40px] font-normal" onclick="formSubmit()">
                     Reservation
                 </button>
@@ -535,10 +535,10 @@
                     <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer">Spaghettis with lobia </p>
                     <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer">Pasta with Tomato</p>
                     <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer">Pasta with green leaf</p>
-                    <div class="flex items-center gap-[5px] mt-[16px]">
+                    <a href="./manu.html" class="flex items-center gap-[5px] mt-[16px]">
                         <p class="text-primary text-lg md:text-[19px] cursor-pointer">See More</p>
                         <svg class="fill-primary h-[18px] w-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>                              
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="col-span-2 xl:col-span-1">
@@ -565,7 +565,7 @@
 
     <!-- All Popups -->
     
-    <section class="hidden h-[100vh] w-full bg-theme_black/60 fixed inset-0" id="main_hamburger">
+    <section class="hidden h-[100vh] w-full bg-theme_black/60 fixed inset-0 z-50" id="main_hamburger">
         <div class="flex items-center justify-end h-full w-full">
             <div class="max-w-96 w-[83%] bg-theme_white h-full">
                 <div class="flex items-center justify-end p-6">
@@ -574,19 +574,19 @@
                     </span>
                 </div>
                 <div class="w-full flex flex-col gap-[6px]">
-                    <a href="/" class="px-5 py-3 over:bg-primary hover:text-theme_white transition-all cursor-pointer">
+                    <a href="/" class="px-5 py-3 hover:bg-secondry text-theme_black transition-all cursor-pointer">
                         Home
                     </a>
-                    <a href="./manu.html" class="px-5 py-3 hover:bg-primary hover:text-theme_white transition-all cursor-pointer ">
+                    <a href="./manu.html" class="px-5 py-3 hover:bg-secondry text-theme_black transition-all cursor-pointer ">
                         Menu
                     </a>
-                    <a href="./gallery.html" class="px-5 py-3 hover:bg-primary hover:text-theme_white transition-all cursor-pointer ">
+                    <a href="./gallery.html" class="px-5 py-3 hover:bg-secondry text-theme_black transition-all cursor-pointer ">
                         Gallery
                     </a>
                     <a href="./membership.html" class="px-5 py-3 bg-primary text-theme_white transition-all cursor-pointer ">
                         Memberships
                     </a>
-                    <a href="./contact-us.html" class="px-5 py-3 hover:bg-primary hover:text-theme_white transition-all cursor-pointer ">
+                    <a href="./contact-us.html" class="px-5 py-3 hover:bg-secondry text-theme_black transition-all cursor-pointer ">
                         Contact
                     </a>
                     <div class="p-4">
