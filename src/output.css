@@ -1380,6 +1380,11 @@ video {
   background-color: rgb(50 56 70 / var(--tw-bg-opacity));
 }
 
+.\!bg-primary {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(229 5 18 / var(--tw-bg-opacity)) !important;
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1750,6 +1755,11 @@ video {
 .text-theme_white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.\!text-theme_white {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .\!shadow-md {

@@ -107,3 +107,15 @@ function formSubmit() {
 
 // sticky bgColor
 
+
+function hello(e) {
+
+    document.querySelectorAll('#hell').forEach(function(el) {
+        el.classList.remove('!bg-white', '!bg-primary', '!text-theme_white');
+    });
+
+    let vvvv = e.closest('#hell');
+    if (vvvv) {
+        vvvv.classList.add('!bg-primary', '!text-theme_white');
+    }
+}
