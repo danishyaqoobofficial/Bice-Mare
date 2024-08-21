@@ -104,3 +104,5 @@ function formSubmit() {
         alert('Message sent successfully!');
     }
 }
+
+// sticky bgColor
