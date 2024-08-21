@@ -981,6 +981,22 @@ video {
   height: 100%;
 }
 
+.h-\[660px\] {
+  height: 660px;
+}
+
+.h-\[74px\] {
+  height: 74px;
+}
+
+.h-\[740px\] {
+  height: 740px;
+}
+
+.h-\[840px\] {
+  height: 840px;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -1370,6 +1386,10 @@ video {
 
 .bg-center {
   background-position: center;
+}
+
+.bg-top {
+  background-position: top;
 }
 
 .bg-no-repeat {
@@ -2433,6 +2453,10 @@ video {
 
   .xl\:w-\[90\%\] {
     width: 90%;
+  }
+
+  .xl\:w-full {
+    width: 100%;
   }
 
   .xl\:grid-cols-3 {
