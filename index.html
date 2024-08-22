@@ -28,7 +28,7 @@
                     </a>
                 </div>
             </div>
-            <a href="/"><img src="/assets/images/logo.png" class="h-11 sm:h-[52px]" alt=""></a>
+            <a href="/"><img src="/assets/images/logo.png" class="h-11 sm:h-[52px] animate-pulse" alt=""></a>
             <div class="flex-1 hidden lg:block">
                 <div class="flex items-center gap-20">
                     <div class="flex items-center gap-11">
@@ -694,8 +694,15 @@
             <video id="video" class="max-w-[1220px] w-full rounded-2xl" src="./assets/🐟 Omega 3 gelatin capsules - Fish Oil [ Production line ].mp4" controls></video>
         </div>
     </section>
-    
-    
+
+    <!-- Loader -->
+    <div id="loader">
+        <section class="flex items-center justify-center h-[100vh] w-full bg-theme_black/50 fixed inset-0 z-50">
+            <div class="loader"></div>
+        </section>
+    </div>
+
+
     <script src="./src/app.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>

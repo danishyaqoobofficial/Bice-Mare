@@ -134,3 +134,17 @@ function blogCategory(e) {
     changing_text.innerHTML = blogCategoryButton.innerText
     Archiving_main.classList.add('!block')
 }
+
+
+// 
+
+
+window.addEventListener('load', ()=> {
+    let loader = document.getElementById('loader');
+
+    if (loader) {
+        loader.classList.add('!hidden');
+    }else{
+        loader.classList.remoave('!hidden');
+    }
+})
