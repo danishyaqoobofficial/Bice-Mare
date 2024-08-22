@@ -804,6 +804,10 @@ video {
   margin-top: 9px;
 }
 
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -1741,6 +1745,14 @@ video {
   padding-top: 70px;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2156,6 +2168,14 @@ video {
   .sm\:font-light {
     font-weight: 300;
   }
+
+  .sm\:font-normal {
+    font-weight: 400;
+  }
+
+  .sm\:font-medium {
+    font-weight: 500;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2400,6 +2420,14 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
+  .lg\:right-0 {
+    right: 0px;
+  }
+
   .lg\:mt-48 {
     margin-top: 12rem;
   }
@@ -2542,6 +2570,14 @@ video {
   .lg\:py-\[90px\] {
     padding-top: 90px;
     padding-bottom: 90px;
+  }
+
+  .lg\:pb-0 {
+    padding-bottom: 0px;
+  }
+
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .lg\:text-3xl {

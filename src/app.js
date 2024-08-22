@@ -139,12 +139,27 @@ function blogCategory(e) {
 // 
 
 
-window.addEventListener('2s', ()=> {
+window.addEventListener('load', () => {
     let shimmer = document.getElementById('shimmer');
+    let outer_shimmer = document.getElementById('outer_shimmer');
+    let images = outer_shimmer.getElementsByTagName('img');
+    let imagesLoaded = 0;
 
-    if (shimmer) {
-        shimmer.classList.add('!hidden');
-    }else{
-        shimmer.classList.add('!block');
+    function checkAllImagesLoaded() {
+        if (imagesLoaded === images.length) {
+            shimmer.classList.add('hidden');
+            outer_shimmer.classList.remove('hidden');
+        }
     }
-})
+    for (let i = 0; i < images.length; i++) {
+        if (images[i].complete) {
+            imagesLoaded++;
+            checkAllImagesLoaded();
+        } else {
+            images[i].addEventListener('load', () => {
+                imagesLoaded++;
+                checkAllImagesLoaded();
+            });
+        }
+    }
+});
