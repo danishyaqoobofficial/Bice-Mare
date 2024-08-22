@@ -140,7 +140,6 @@ function blogCategory(e) {
 
 
 window.addEventListener('load', ()=> {
-    let loader = document.getElementById('loader');
     let image = document.getElementById('image');
 
     if (image) {
