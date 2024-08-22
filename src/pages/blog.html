@@ -32,7 +32,7 @@
                 <div class="flex items-center gap-20">
                     <div class="flex items-center gap-11">
                         <a href="/" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Home</a>
-                        <a href="./main-manu.html" class="text-xl cursor-pointer text-theme_black font-normal transition-all tracking-wide">Menu</a>
+                        <a href="./main-manu.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Menu</a>
                         <a href="./gallery.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Gallery</a>
                         <a href="./membership.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Memberships</a>
                         <a href="./contact-us.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Contact</a>
@@ -55,9 +55,168 @@
             </div>
         </div>
     </header>
-    <section class="pt-20 px-6 sm:px-10 md:px-12 lg:px-20 max-w-[1700px] mx-auto">
+    <section class="pt-20 px-6 sm:px-10 md:px-12 lg:px-20 max-w-[1700px] mx-auto border-b border-grey2">
         <p class="text-center text-grey1 text-lg sm:text-xl font-normal">Food Articles</p>
         <h2 class="text-center font-light text-4xl sm:text-6xl md:text-7xl lg:text-[80px] leading-[50px] md:leading-[110px] mt-3 text-theme_black tracking-wide">Blogs & News</h2>
+        <div class="flex items-center gap-2 py-3">
+            <a href="/src/pages/blog.html" class="text-theme_black font-normal">Blogs</a>
+            <div class="hidden" id="changing_text_main">
+                <div class="flex items-center gap-2 ">
+                    <svg class="h-[16px] w-[16px] fill-[#797979] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+                    <p class="text-grey1" id="changing_text">Main Menu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="px-6 sm:px-10 md:px-12 lg:px-20 max-w-[1700px] mx-auto py-20 flex flex-col md:flex-row gap-10 lg:gap-4 xl:gap-10">
+        <div class="max-w-[350px] w-full">
+            <div class="rounded-2xl bg-theme_black w-full overflow-hidden">
+                <div class="px-7 py-7 flex items-center">
+                    <h3 class="text-theme_white font-light text-2xl sm:text-3xl ">Blogs Category</h3>
+                </div>
+                <div class="w-full">
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40" id="main_category_button">
+                        <div class="py-3 px-4 relative group cursor-pointer" onclick="blogCategory(this)">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none" id="blogCategoryButton">
+                                Main Menu
+                            </div>
+                            <div class="absolute w-0 group-hover:w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40" id="main_category_button">
+                        <div class="py-3 px-4 relative group cursor-pointer" onclick="blogCategory(this)">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none" id="blogCategoryButton">
+                                Italian Food
+                            </div>
+                            <div class="absolute w-0 group-hover:w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40" id="main_category_button">
+                        <div class="py-3 px-4 relative group cursor-pointer" onclick="blogCategory(this)">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none" id="blogCategoryButton">
+                                Drinks
+                            </div>
+                            <div class="absolute w-0 group-hover:w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40" id="main_category_button">
+                        <div class="py-3 px-4 relative group cursor-pointer" onclick="blogCategory(this)">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none" id="blogCategoryButton">
+                                Upcoming Events
+                            </div>
+                            <div class="absolute w-0 group-hover:w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40" id="main_category_button">
+                        <div class="py-3 px-4 relative group cursor-pointer" onclick="blogCategory(this)">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none" id="blogCategoryButton">
+                                Important News
+                            </div>
+                            <div class="absolute w-0 group-hover:w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-2xl bg-theme_black overflow-hidden mt-5 w-full hidden" id="Archiving_main">
+                <div class="px-7 py-7 flex items-center">
+                    <h3 class="text-theme_white font-light text-2xl sm:text-3xl ">Archiving</h3>
+                </div>
+                <div class="w-full">
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40">
+                        <div class="py-3 px-4 relative group cursor-pointer">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none">
+                                Year 2020
+                            </div>
+                            <div class="absolute w-0 group-hover:w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40">
+                        <div class="py-3 px-4 relative group cursor-pointer">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none">
+                                Year 2021
+                            </div>
+                            <div class="absolute w-0 group-hover:w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40">
+                        <div class="py-3 px-4 relative group cursor-pointer">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none">
+                                Year 2022
+                            </div>
+                            <div class="absolute w-0 group-hover:w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40">
+                        <div class="py-3 px-4 relative group cursor-pointer">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none">
+                                Year 2023
+                            </div>
+                            <div class="absolute w-0 group-hover:w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40">
+                        <div class="py-3 px-4 relative group cursor-pointer">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none">
+                                Year 2024
+                            </div>
+                            <div class="absolute w-0 group-hover:w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-1">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-4 xl:gap-10">
+                <a href="./blog-details.html" class="overflow-hidden">
+                    <div class="flex-1 bg-cover rounded-2xl bg-center bg-no-repeat h-[320px]" style="background-image: url(/assets/images/blog2.png);"></div>
+                    <div class="flex-1 py-3">
+                        <h3 class="text-theme_black text-xl md:text-2xl lg:text-3xl mt-4 line-clamp-2">Did You Know? The Different Types of Italian Pasta</h3>
+                        <p class="text-grey1 lg:text-lg font-sans font-light mt-3 line-clamp-5">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero</p>
+                        <div class="max-w-max px-5 py-[7px] text-[15px] rounded-md border border-primary text-theme_black text-lg cursor-pointer mt-5">Read More</div>
+                    </div>
+                </a>
+                <a href="./blog-details.html" class="overflow-hidden">
+                    <div class="flex-1 bg-cover rounded-2xl bg-center bg-no-repeat h-[320px]" style="background-image: url(/assets/images/blog2.png);"></div>
+                    <div class="flex-1 py-3">
+                        <h3 class="text-theme_black text-xl md:text-2xl lg:text-3xl mt-4 line-clamp-2">Did You Know? The Different Types of Italian Pasta</h3>
+                        <p class="text-grey1 lg:text-lg font-sans font-light mt-3 line-clamp-5">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero</p>
+                        <div class="max-w-max px-5 py-[7px] text-[15px] rounded-md border border-primary text-theme_black text-lg cursor-pointer mt-5">Read More</div>
+                    </div>
+                </a>
+                <a href="./blog-details.html" class="overflow-hidden">
+                    <div class="flex-1 bg-cover rounded-2xl bg-center bg-no-repeat h-[320px]" style="background-image: url(/assets/images/blog2.png);"></div>
+                    <div class="flex-1 py-3">
+                        <h3 class="text-theme_black text-xl md:text-2xl lg:text-3xl mt-4 line-clamp-2">Did You Know? The Different Types of Italian Pasta</h3>
+                        <p class="text-grey1 lg:text-lg font-sans font-light mt-3 line-clamp-5">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero</p>
+                        <div class="max-w-max px-5 py-[7px] text-[15px] rounded-md border border-primary text-theme_black text-lg cursor-pointer mt-5">Read More</div>
+                    </div>
+                </a>
+                <a href="./blog-details.html" class="overflow-hidden">
+                    <div class="flex-1 bg-cover rounded-2xl bg-center bg-no-repeat h-[320px]" style="background-image: url(/assets/images/blog2.png);"></div>
+                    <div class="flex-1 py-3">
+                        <h3 class="text-theme_black text-xl md:text-2xl lg:text-3xl mt-4 line-clamp-2">Did You Know? The Different Types of Italian Pasta</h3>
+                        <p class="text-grey1 lg:text-lg font-sans font-light mt-3 line-clamp-5">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero</p>
+                        <div class="max-w-max px-5 py-[7px] text-[15px] rounded-md border border-primary text-theme_black text-lg cursor-pointer mt-5">Read More</div>
+                    </div>
+                </a>
+                <a href="./blog-details.html" class="overflow-hidden">
+                    <div class="flex-1 bg-cover rounded-2xl bg-center bg-no-repeat h-[320px]" style="background-image: url(/assets/images/blog2.png);"></div>
+                    <div class="flex-1 py-3">
+                        <h3 class="text-theme_black text-xl md:text-2xl lg:text-3xl mt-4 line-clamp-2">Did You Know? The Different Types of Italian Pasta</h3>
+                        <p class="text-grey1 lg:text-lg font-sans font-light mt-3 line-clamp-5">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero</p>
+                        <div class="max-w-max px-5 py-[7px] text-[15px] rounded-md border border-primary text-theme_black text-lg cursor-pointer mt-5">Read More</div>
+                    </div>
+                </a>
+                <a href="./blog-details.html" class="overflow-hidden">
+                    <div class="flex-1 bg-cover rounded-2xl bg-center bg-no-repeat h-[320px]" style="background-image: url(/assets/images/blog2.png);"></div>
+                    <div class="flex-1 py-3">
+                        <h3 class="text-theme_black text-xl md:text-2xl lg:text-3xl mt-4 line-clamp-2">Did You Know? The Different Types of Italian Pasta</h3>
+                        <p class="text-grey1 lg:text-lg font-sans font-light mt-3 line-clamp-5">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero</p>
+                        <div class="max-w-max px-5 py-[7px] text-[15px] rounded-md border border-primary text-theme_black text-lg cursor-pointer mt-5">Read More</div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </section>
     <section class="bg-theme_black w-full py-[70px]">
         <div class="max-w-[1700px] mx-auto px-6 sm:px-10 md:px-12 lg:px-20">
@@ -85,7 +244,7 @@
                         <p class="text-lg sm:text-xl font-normal text-theme_black select-none line-clamp-1">What are your opening hours?</p>
                         <svg class="rotate_svg h-[18px] w-[18px] text-theme_black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
                     </div>
-                    <p class="text-[16px] font-sans text-grey1 mt-[9px] hidden answer" id="answer">Our restaurant is open from 11:00 AM to 10:00 PM, Monday through Sunday. During holidays, our hours may vary, so please check our website or call us for specific holiday hours.</p>
+                    <p class="text-[16px] font-sans text-grey1 mt-[9px] hidden answer select-none" id="answer">Our restaurant is open from 11:00 AM to 10:00 PM, Monday through Sunday. During holidays, our hours may vary, so please check our website or call us for specific holiday hours.</p>
                 </div>
             </div>
             <div class="border-b border-[#D2D2D2] py-[18px]">
@@ -94,7 +253,7 @@
                         <p class="text-lg sm:text-xl font-normal text-theme_black select-none line-clamp-1">Do you offer takeout or delivery services?</p>
                         <svg class="rotate_svg h-[18px] w-[18px] text-theme_black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
                     </div>
-                    <p class="text-[16px] font-sans text-grey1 mt-[9px] hidden answer" id="answer">Our restaurant is open from 11:00 AM to 10:00 PM, Monday through Sunday. During holidays, our hours may vary, so please check our website or call us for specific holiday hours.</p>
+                    <p class="text-[16px] font-sans text-grey1 mt-[9px] hidden answer select-none" id="answer">Our restaurant is open from 11:00 AM to 10:00 PM, Monday through Sunday. During holidays, our hours may vary, so please check our website or call us for specific holiday hours.</p>
                 </div>
             </div>
             <div class="border-b border-[#D2D2D2] py-[18px]">
@@ -103,7 +262,7 @@
                         <p class="text-lg sm:text-xl font-normal text-theme_black select-none line-clamp-1">Do you have vegetarian or vegan options?</p>
                         <svg class="rotate_svg h-[18px] w-[18px] text-theme_black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
                     </div>
-                    <p class="text-[16px] font-sans text-grey1 mt-[9px] hidden answer" id="answer">Our restaurant is open from 11:00 AM to 10:00 PM, Monday through Sunday. During holidays, our hours may vary, so please check our website or call us for specific holiday hours.</p>
+                    <p class="text-[16px] font-sans text-grey1 mt-[9px] hidden answer select-none" id="answer">Our restaurant is open from 11:00 AM to 10:00 PM, Monday through Sunday. During holidays, our hours may vary, so please check our website or call us for specific holiday hours.</p>
                 </div>
             </div>
             <div class="border-b border-[#D2D2D2] py-[18px]">
@@ -112,7 +271,7 @@
                         <p class="text-lg sm:text-xl font-normal text-theme_black select-none line-clamp-1">What are your opening hours?</p>
                         <svg class="rotate_svg h-[18px] w-[18px] text-theme_black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
                     </div>
-                    <p class="text-[16px] font-sans text-grey1 mt-[9px] hidden answer" id="answer">Our restaurant is open from 11:00 AM to 10:00 PM, Monday through Sunday. During holidays, our hours may vary, so please check our website or call us for specific holiday hours.</p>
+                    <p class="text-[16px] font-sans text-grey1 mt-[9px] hidden answer select-none" id="answer">Our restaurant is open from 11:00 AM to 10:00 PM, Monday through Sunday. During holidays, our hours may vary, so please check our website or call us for specific holiday hours.</p>
                 </div>
             </div>
             <div class="border-b border-[#D2D2D2] py-[18px]">
@@ -121,7 +280,7 @@
                         <p class="text-lg sm:text-xl font-normal text-theme_black select-none line-clamp-1">What are your opening hours?</p>
                         <svg class="rotate_svg h-[18px] w-[18px] text-theme_black "xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
                     </div>
-                    <p class="text-[16px] font-sans text-grey1 mt-[9px] hidden answer" id="answer">Our restaurant is open from 11:00 AM to 10:00 PM, Monday through Sunday. During holidays, our hours may vary, so please check our website or call us for specific holiday hours.</p>
+                    <p class="text-[16px] font-sans text-grey1 mt-[9px] hidden answer select-none" id="answer">Our restaurant is open from 11:00 AM to 10:00 PM, Monday through Sunday. During holidays, our hours may vary, so please check our website or call us for specific holiday hours.</p>
                 </div>
             </div>
             <div class="border-b border-[#D2D2D2] py-[18px]">
@@ -130,7 +289,7 @@
                         <p class="text-lg sm:text-xl font-normal text-theme_black select-none line-clamp-1">What are your opening hours?</p>
                         <svg class="rotate_svg h-[18px] w-[18px] text-theme_black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
                     </div>
-                    <p class="text-[16px] font-sans text-grey1 mt-[9px] hidden answer" id="answer">Our restaurant is open from 11:00 AM to 10:00 PM, Monday through Sunday. During holidays, our hours may vary, so please check our website or call us for specific holiday hours.</p>
+                    <p class="text-[16px] font-sans text-grey1 mt-[9px] hidden answer select-none" id="answer">Our restaurant is open from 11:00 AM to 10:00 PM, Monday through Sunday. During holidays, our hours may vary, so please check our website or call us for specific holiday hours.</p>
                 </div>
             </div>
         </div>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Blog Details</title>
+</head>
+<body>
+    <div class="py-[10px] bg-primary">
+        <p class="text-center font-normal text-theme_white text-sm sm:text-[16px] font-sans line-clamp-1 px-4">
+            Enjoy a delicious meal with us and get 20% off your total bill this New year!
+        </p>
+    </div>
+    <header class="border-b border-grey2 py-3 sm:py-4 lg:py-5 sticky top-0 z-40 bg-theme_white">
+        <div class="max-w-[1700px] mx-auto flex items-center justify-between px-6 sm:px-10 md:px-12 lg:px-20 gap-10 xl:flex-row-reverse">
+            <div class="xl:block hidden flex-1">
+                <div class="flex items-center gap-5 justify-end">
+                    <div class="flex items-center gap-[20px]">
+                        <a href=""><img class="h-[26px]" src="/assets/images/facebook.png" alt=""></a>
+                        <a href=""><img class="h-[26px]" src="/assets/images/instagram.png" alt=""></a>
+                        <a href=""><img class="h-[26px]" src="/assets/images/whatsapp.png" alt=""></a>
+                    </div>
+                    <a href="./contact-us.html" class="border max-w-max border-primary transition-all hover:bg-primary hover:text-theme_white tracking-wide flex items-center justify-center rounded-lg text-theme_black px-[17px] text-lg py-[7px] cursor-pointer">
+                        Reservation
+                    </a>
+                </div>
+            </div>
+            <a href="/"><img src="/assets/images/logo.png" class="h-11 sm:h-[52px]" alt=""></a>
+            <div class="flex-1 hidden lg:block">
+                <div class="flex items-center gap-20">
+                    <div class="flex items-center gap-11">
+                        <a href="/" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Home</a>
+                        <a href="./main-manu.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Menu</a>
+                        <a href="./gallery.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Gallery</a>
+                        <a href="./membership.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Memberships</a>
+                        <a href="./contact-us.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <div class="hidden sm:block xl:hidden">
+                    <div class="flex items-center justify-end flex-1">
+                        <a href="./contact-us.html" class="border max-w-max border-primary transition-all hover:bg-primary hover:text-theme_white tracking-wide flex items-center justify-center rounded-lg text-theme_black px-[17px] text-lg py-[7px] cursor-pointer">
+                            Reservation
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:hidden block" onclick="open_hamburger()">
+                    <span class="flex items-center justify-center cursor-pointer">
+                        <svg class="fill-[#000] h-6 sm:h-7 w-6 sm:w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="pt-20 px-6 sm:px-10 md:px-12 lg:px-20 max-w-[1700px] mx-auto border-b border-grey2">
+        <p class="text-center text-grey1 text-lg sm:text-xl font-normal">Food Articles</p>
+        <h2 class="text-center font-light text-4xl sm:text-6xl md:text-7xl lg:text-[80px] leading-[50px] md:leading-[110px] mt-3 text-theme_black tracking-wide">Did you know? The different types of Italian Pasta</h2>
+        <div class="flex items-center gap-2 py-3">
+            <a href="/src/pages/blog.html" class="text-theme_black font-normal">Blogs</a>
+            <div>
+                <div class="flex items-center gap-2 ">
+                    <svg class="h-[16px] w-[16px] fill-[#797979] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+                    <p class="text-theme_black">Main Menu</p>
+                </div>
+            </div>
+            <div>
+                <div class="flex items-center gap-2 ">
+                    <svg class="h-[16px] w-[16px] fill-[#797979] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+                    <p class="text-grey1">Italian Pasta</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="px-6 sm:px-10 md:px-12 lg:px-20 max-w-[1700px] mx-auto pt-4 flex items-center justify-end">
+        <p class="text-grey1 font-normal"><span class="text-theme_black">Posted Date:</span> 15th August,2024</p>
+    </section>
+    <section class="px-6 sm:px-10 md:px-12 lg:px-20 max-w-[1700px] mx-auto py-20 flex flex-col lg:flex-row gap-10">
+        <div class="max-w-[350px] w-full">
+            <div class="rounded-2xl bg-theme_black w-full overflow-hidden">
+                <div class="px-7 py-7 flex items-center">
+                    <h3 class="text-theme_white font-light text-2xl sm:text-3xl ">Blogs Category</h3>
+                </div>
+                <div class="w-full">
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40" >
+                        <div class="py-3 px-4 relative group cursor-pointer">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none" >
+                                Main Menu
+                            </div>
+                            <div class="absolute w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40" >
+                        <div class="py-3 px-4 relative group cursor-pointer">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none" >
+                                Italian Food
+                            </div>
+                            <div class="absolute w-0 group-hover:w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40" >
+                        <div class="py-3 px-4 relative group cursor-pointer">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none" >
+                                Drinks
+                            </div>
+                            <div class="absolute w-0 group-hover:w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40" >
+                        <div class="py-3 px-4 relative group cursor-pointer">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none" >
+                                Upcoming Events
+                            </div>
+                            <div class="absolute w-0 group-hover:w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40">
+                        <div class="py-3 px-4 relative group cursor-pointer">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none">
+                                Important News
+                            </div>
+                            <div class="absolute w-0 group-hover:w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-2xl bg-theme_black overflow-hidden mt-5 w-full">
+                <div class="px-7 py-7 flex items-center">
+                    <h3 class="text-theme_white font-light text-2xl sm:text-3xl ">Archiving</h3>
+                </div>
+                <div class="w-full">
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40">
+                        <div class="py-3 px-4 relative group cursor-pointer">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none">
+                                Year 2020
+                            </div>
+                            <div class="absolute w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40">
+                        <div class="py-3 px-4 relative group cursor-pointer">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none">
+                                Year 2021
+                            </div>
+                            <div class="absolute w-0 group-hover:w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40">
+                        <div class="py-3 px-4 relative group cursor-pointer">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none">
+                                Year 2022
+                            </div>
+                            <div class="absolute w-0 group-hover:w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40">
+                        <div class="py-3 px-4 relative group cursor-pointer">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none">
+                                Year 2023
+                            </div>
+                            <div class="absolute w-0 group-hover:w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                    <div class="py-[10px] pr-8 w-full border-t border-grey2 !z-40">
+                        <div class="py-3 px-4 relative group cursor-pointer">
+                            <div class=" text-theme_white font-light text-lg sm:text-xl group relative !z-40 select-none">
+                                Year 2024
+                            </div>
+                            <div class="absolute w-0 group-hover:w-full inset-0 h-full !z-0 bg-primary transition-all rounded-lg rounded-tl-[0px] rounded-bl-[0px]"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-1">
+            <p class="text-grey1 text-md sm:text-lg font-sans font-light ">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.</p>
+            <div class="flex gap-5 mt-12 flex-col lg:flex-row">
+                <div class="h-[360px] flex-1 overflow-hidden rounded-3xl">
+                    <img class="h-full w-full" src="/assets/images/about1.png" alt="">
+                </div>
+                <div class="h-[360px] flex-1 overflow-hidden rounded-3xl">
+                    <img class="h-full w-full" src="/assets/images/about2.png" alt="">
+                </div>
+            </div>
+            <p class="text-grey1 text-md sm:text-lg font-sans font-light mt-10 ">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.</p>
+            <section class="h-[460px] sm:h-[540px] md:h-[580px] relative w-full mt-8 rounded-3xl overflow-hidden">
+                <video class="h-full w-full object-cover" src="/assets/🐟 Omega 3 gelatin capsules - Fish Oil [ Production line ].mp4" autoplay muted loop></video>
+                <div class="h-full w-full bg-theme_black/60 flex items-center justify-center absolute inset-0">
+                    <div class="absolute flex items-center justify-center">
+                        <div class="rounded-full size-24 flex items-center justify-center border border-theme_white cursor-pointer" id="video_play_button">
+                            <svg width="35" height="35" viewBox="0 0 36 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M32.6712 26.4786C37.1096 23.8211 37.1096 17.1801 32.6712 14.5198L9.99915 0.936635C5.55804 -1.72364 0 1.59963 0 6.91743V34.0838C0 39.4016 5.55804 42.7248 9.99915 40.0618L32.6712 26.4786Z" fill="white"/>
+                            </svg>                
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <p class="text-grey1 text-md sm:text-lg font-sans font-light mt-10 ">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.</p>
+        </div>
+    </section>
+    <section class="max-w-[1700px] mx-auto px-6 sm:px-10 md:px-12 lg:px-20 py-32 ">
+        <p class="text-grey1 text-md sm:text-lg font-sans font-light ">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.</p>
+    </section>
+    <section class="max-w-[1700px] mx-auto px-6 sm:px-10 md:px-12 lg:px-20">
+        <h2 class="text-center font-normal text-3xl sm:text-4xl md:text-[46px] mt-3 text-theme_black">Recently Added <span class="text-primary">Blogs</span></h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[16px] mt-[70px]">
+            <div class="overflow-hidden">
+                <div class="flex-1 bg-cover rounded-2xl bg-center bg-no-repeat h-[320px]" style="background-image: url(/assets/images/blog2.png);"></div>
+                <div class="flex-1 py-3">
+                    <h3 class="text-theme_black text-xl md:text-2xl lg:text-3xl mt-4 line-clamp-2">Did You Know? The Different Types of Italian Pasta</h3>
+                    <p class="text-grey1 lg:text-lg font-sans font-light mt-3 line-clamp-5">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero</p>
+                    <div class="max-w-max px-5 py-[7px] text-[15px] rounded-md border border-primary text-theme_black text-lg cursor-pointer mt-5">Read More</div>
+                </div>
+            </div>
+            <div class="overflow-hidden">
+                <div class="flex-1 bg-cover rounded-2xl bg-center bg-no-repeat h-[320px]" style="background-image: url(/assets/images/blog2.png);"></div>
+                <div class="flex-1 py-3">
+                    <h3 class="text-theme_black text-xl md:text-2xl lg:text-3xl mt-4 line-clamp-2">Did You Know? The Different Types of Italian Pasta</h3>
+                    <p class="text-grey1 lg:text-lg font-sans font-light mt-3 line-clamp-5">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero</p>
+                    <div class="max-w-max px-5 py-[7px] text-[15px] rounded-md border border-primary text-theme_black text-lg cursor-pointer mt-5">Read More</div>
+                </div>
+            </div>
+            <div class="overflow-hidden">
+                <div class="flex-1 bg-cover rounded-2xl bg-center bg-no-repeat h-[320px]" style="background-image: url(/assets/images/blog2.png);"></div>
+                <div class="flex-1 py-3">
+                    <h3 class="text-theme_black text-xl md:text-2xl lg:text-3xl mt-4 line-clamp-2">Did You Know? The Different Types of Italian Pasta</h3>
+                    <p class="text-grey1 lg:text-lg font-sans font-light mt-3 line-clamp-5">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero</p>
+                    <div class="max-w-max px-5 py-[7px] text-[15px] rounded-md border border-primary text-theme_black text-lg cursor-pointer mt-5">Read More</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pb-16 sm:pb-24 md:pb-32 relative mt-24 sm:mt-28 md:mt-36">
+        <img class="absolute left-0 top-12 sm:top-10 md:top-0 z-0 h-[180px] sm:h-[240px] md:h-[300px] lg:h-[390px]" src="./assets/images/client-section-position.png" alt="">
+        <img class="absolute right-0 bottom-10 sm:bottom-7 md:bottom-0 h-[180px] sm:h-[240px] md:h-[300px] lg:h-[390px] z-0" src="./assets/images/client-section-position1.png" alt="">
+        <div class="max-w-[1700px] mx-auto px-6 sm:px-10 md:px-12 lg:px-20 overflow-hidden">
+            <p class="text-center font-normal text-lg sm:text-xl text-grey1">Testimonials</p>
+            <h2 class="text-center font-normal text-3xl sm:text-4xl md:text-[46px] mt-3 text-theme_black">Our Happy <span class="text-primary">Clients</span></h2>
+            <div class="swiper2">
+                <div class="swiper-wrapper relative z-30 h-full w-full mt-[110px] sm:mt-[130px] md:mt-[160px]">
+                    <div class="swiper-slide bg-theme_black relative rounded-tr-[22px] md:rounded-tr-[30px] rounded-br-[80px] md:rounded-br-[100px] transition-all hover:z-30 rounded-bl-[22px] md:rounded-bl-[30px] rounded-tl-[80px] md:rounded-tl-[100px] w-full lg:!scale-75">
+                        <div class="bg-cover bg-center bg-no-repeat h-28 md:h-32 w-28 md:w-32 rounded-full mx-auto absolute left-[50%] top-0 -translate-y-[50%] -translate-x-[50%]" style="background-image: url(/assets/images/review-image2.png);"></div>
+                        <div class="px-6 md:px-7 py-4 md:py-5">
+                            <h3 class="text-center text-xl md:text-[26px] font-normal text-theme_white mt-[70px]">Ama Ampomah</h3>
+                            <span class="flex items-center justify-start">
+                                <svg class="h-[19px] md:h-[22px] w-[19px] md:w-[22px] fill-[#fff]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+                            </span>
+                            <p class="mt-[6px] text-theme_white line-clamp-3 sm:line-clamp-6 font-light font-sans text-center text-sm md:text-md">Lorem ipsum dolor sit amet consectetur. Mauris neque aliquam pretium arcu. Facilisi laoreet eget Lorem ipsum dolor sit amet consectetur. Mauris neque aliquam pretium arcu. Facilisi laoreet eget . laoreet eget Lorem ipsum dolor sit amet consectetur. Mauris neque aliqu laoreet eget Lorem ipsum dolor sit amet </p>
+                            <span class="flex items-center justify-end px-[22px]">
+                                <svg class="h-[19px] md:h-[22px] w-[19px] md:w-[22px] fill-[#fff]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"/></svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-theme_black relative rounded-tr-[22px] md:rounded-tr-[30px] rounded-br-[80px] md:rounded-br-[100px] transition-all hover:z-30 rounded-bl-[22px] md:rounded-bl-[30px] rounded-tl-[80px] md:rounded-tl-[100px] w-full lg:!scale-75">
+                        <div class="bg-cover bg-center bg-no-repeat h-28 md:h-32 w-28 md:w-32 rounded-full mx-auto absolute left-[50%] top-0 -translate-y-[50%] -translate-x-[50%]" style="background-image: url(/assets/images/review-image.png);"></div>
+                        <div class="px-6 md:px-7 py-4 md:py-5">
+                            <h3 class="text-center text-xl md:text-[26px] font-normal text-theme_white mt-[70px]">Ama Ampomah</h3>
+                            <span class="flex items-center justify-start">
+                                <svg class="h-[19px] md:h-[22px] w-[19px] md:w-[22px] fill-[#fff]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+                            </span>
+                            <p class="mt-[6px] text-theme_white line-clamp-3 sm:line-clamp-6 font-light font-sans text-center text-sm md:text-md">Lorem ipsum dolor sit amet consectetur. Mauris neque aliquam pretium arcu. Facilisi laoreet eget Lorem ipsum dolor sit amet consectetur. Mauris neque aliquam pretium arcu. Facilisi laoreet eget . laoreet eget Lorem ipsum dolor sit amet consectetur. Mauris neque aliqu laoreet eget Lorem ipsum dolor sit amet </p>
+                            <span class="flex items-center justify-end px-[22px]">
+                                <svg class="h-[19px] md:h-[22px] w-[19px] md:w-[22px] fill-[#fff]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"/></svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-theme_black relative rounded-tr-[22px] md:rounded-tr-[30px] rounded-br-[80px] md:rounded-br-[100px] transition-all hover:z-30 rounded-bl-[22px] md:rounded-bl-[30px] rounded-tl-[80px] md:rounded-tl-[100px] w-full lg:!scale-75">
+                        <div class="bg-cover bg-center bg-no-repeat h-28 md:h-32 w-28 md:w-32 rounded-full mx-auto absolute left-[50%] top-0 -translate-y-[50%] -translate-x-[50%]" style="background-image: url(/assets/images/review-image2.png);"></div>
+                        <div class="px-6 md:px-7 py-4 md:py-5">
+                            <h3 class="text-center text-xl md:text-[26px] font-normal text-theme_white mt-[70px]">Ama Ampomah</h3>
+                            <span class="flex items-center justify-start">
+                                <svg class="h-[19px] md:h-[22px] w-[19px] md:w-[22px] fill-[#fff]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+                            </span>
+                            <p class="mt-[6px] text-theme_white line-clamp-3 sm:line-clamp-6 font-light font-sans text-center text-sm md:text-md">Lorem ipsum dolor sit amet consectetur. Mauris neque aliquam pretium arcu. Facilisi laoreet eget Lorem ipsum dolor sit amet consectetur. Mauris neque aliquam pretium arcu. Facilisi laoreet eget . laoreet eget Lorem ipsum dolor sit amet consectetur. Mauris neque aliqu laoreet eget Lorem ipsum dolor sit amet </p>
+                            <span class="flex items-center justify-end px-[22px]">
+                                <svg class="h-[19px] md:h-[22px] w-[19px] md:w-[22px] fill-[#fff]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"/></svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-theme_black relative rounded-tr-[22px] md:rounded-tr-[30px] rounded-br-[80px] md:rounded-br-[100px] transition-all hover:z-30 rounded-bl-[22px] md:rounded-bl-[30px] rounded-tl-[80px] md:rounded-tl-[100px] w-full lg:!scale-75">
+                        <div class="bg-cover bg-center bg-no-repeat h-28 md:h-32 w-28 md:w-32 rounded-full mx-auto absolute left-[50%] top-0 -translate-y-[50%] -translate-x-[50%]" style="background-image: url(/assets/images/review-image.png);"></div>
+                        <div class="px-6 md:px-7 py-4 md:py-5">
+                            <h3 class="text-center text-xl md:text-[26px] font-normal text-theme_white mt-[70px]">Ama Ampomah</h3>
+                            <span class="flex items-center justify-start">
+                                <svg class="h-[19px] md:h-[22px] w-[19px] md:w-[22px] fill-[#fff]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+                            </span>
+                            <p class="mt-[6px] text-theme_white line-clamp-3 sm:line-clamp-6 font-light font-sans text-center text-sm md:text-md">Lorem ipsum dolor sit amet consectetur. Mauris neque aliquam pretium arcu. Facilisi laoreet eget Lorem ipsum dolor sit amet consectetur. Mauris neque aliquam pretium arcu. Facilisi laoreet eget . laoreet eget Lorem ipsum dolor sit amet consectetur. Mauris neque aliqu laoreet eget Lorem ipsum dolor sit amet </p>
+                            <span class="flex items-center justify-end px-[22px]">
+                                <svg class="h-[19px] md:h-[22px] w-[19px] md:w-[22px] fill-[#fff]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"/></svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-theme_black relative rounded-tr-[22px] md:rounded-tr-[30px] rounded-br-[80px] md:rounded-br-[100px] transition-all hover:z-30 rounded-bl-[22px] md:rounded-bl-[30px] rounded-tl-[80px] md:rounded-tl-[100px] w-full lg:!scale-75">
+                        <div class="bg-cover bg-center bg-no-repeat h-28 md:h-32 w-28 md:w-32 rounded-full mx-auto absolute left-[50%] top-0 -translate-y-[50%] -translate-x-[50%]" style="background-image: url(/assets/images/review-image2.png);"></div>
+                        <div class="px-6 md:px-7 py-4 md:py-5">
+                            <h3 class="text-center text-xl md:text-[26px] font-normal text-theme_white mt-[70px]">Ama Ampomah</h3>
+                            <span class="flex items-center justify-start">
+                                <svg class="h-[19px] md:h-[22px] w-[19px] md:w-[22px] fill-[#fff]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+                            </span>
+                            <p class="mt-[6px] text-theme_white line-clamp-3 sm:line-clamp-6 font-light font-sans text-center text-sm md:text-md">Lorem ipsum dolor sit amet consectetur. Mauris neque aliquam pretium arcu. Facilisi laoreet eget Lorem ipsum dolor sit amet consectetur. Mauris neque aliquam pretium arcu. Facilisi laoreet eget . laoreet eget Lorem ipsum dolor sit amet consectetur. Mauris neque aliqu laoreet eget Lorem ipsum dolor sit amet </p>
+                            <span class="flex items-center justify-end px-[22px]">
+                                <svg class="h-[19px] md:h-[22px] w-[19px] md:w-[22px] fill-[#fff]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z"/></svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center gap-3 w-full mt-24 sm:mt-28 md:mt-32 z-30 swiper-navigation">
+                <span class="swiper-button-prev-review rounded-full h-12 sm:h-[56px] cursor-pointer w-12 sm:w-[56px] flex items-center justify-center border border-primary ">
+                    <svg width="18" height="15" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.7512 0.363037C13.0337 0.605061 13.1816 0.913092 13.195 1.28713C13.2073 1.66117 13.0722 1.9692 12.7897 2.21122L5.23917 8.67987L22.4591 8.67987C22.8957 8.67987 23.2619 8.8066 23.5578 9.06007C23.8526 9.31265 24 9.62596 24 10C24 10.374 23.8526 10.6878 23.5578 10.9413C23.2619 11.1938 22.8957 11.3201 22.4591 11.3201L5.23917 11.3201L12.7897 17.7888C13.0722 18.0308 13.2073 18.3388 13.195 18.7129C13.1816 19.0869 13.0337 19.3949 12.7512 19.637C12.4687 19.879 12.1091 20 11.6726 20C11.236 20 10.8764 19.879 10.5939 19.637L0.423759 10.9241C0.269667 10.8141 0.160257 10.6768 0.0955391 10.5122C0.031847 10.3468 0 10.176 0 10C0 9.82398 0.031847 9.65897 0.0955391 9.50495C0.160257 9.35093 0.269667 9.20792 0.423759 9.07591L10.5939 0.363037C10.8764 0.121014 11.236 0 11.6726 0C12.1091 0 12.4687 0.121014 12.7512 0.363037Z" fill="#E1000A"/>
+                    </svg>                        
+                </span>
+                <span class="swiper-button-next-review rounded-full h-12 sm:h-[56px] cursor-pointer w-12 sm:w-[56px] flex items-center justify-center border border-primary bg-primary ">
+                    <svg width="18" height="15" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.2488 19.637C10.9663 19.3949 10.8184 19.0869 10.805 18.7129C10.7927 18.3388 10.9278 18.0308 11.2103 17.7888L18.7608 11.3201H1.54093C1.10433 11.3201 0.738106 11.1934 0.442247 10.9399C0.147416 10.6873 0 10.374 0 10C0 9.62596 0.147416 9.31221 0.442247 9.05875C0.738106 8.80616 1.10433 8.67987 1.54093 8.67987H18.7608L11.2103 2.21122C10.9278 1.9692 10.7927 1.66117 10.805 1.28713C10.8184 0.913091 10.9663 0.60506 11.2488 0.363036C11.5313 0.121012 11.8909 0 12.3274 0C12.764 0 13.1236 0.121012 13.4061 0.363036L23.5762 9.07591C23.7303 9.18592 23.8397 9.32321 23.9045 9.48779C23.9682 9.65325 24 9.82398 24 10C24 10.176 23.9682 10.341 23.9045 10.495C23.8397 10.6491 23.7303 10.7921 23.5762 10.9241L13.4061 19.637C13.1236 19.879 12.764 20 12.3274 20C11.8909 20 11.5313 19.879 11.2488 19.637Z" fill="white"/>
+                    </svg>                  
+                </span>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-theme_black w-full py-10 md:py-14 lg:py-[70px]">
+        <div class="max-w-[1700px] mx-auto px-6 sm:px-10 md:px-12 lg:px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-12 xl:gap-0 ">
+            <div class="col-span-2 xl:pr-8">
+                <a href="/"><img src="/assets/images/logo_white.png" class="h-[90px]" alt=""></a>
+                <p class="text-theme_white text-[15px] sm:text-md md:text-lg mt-[14px] font-sans font-light">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem</p>
+                <div class="mt-[40px]">
+                    <h3 class="text-2xl sm:text-3xl md:text-[32px] font-light text-theme_white">Opening hours</h3>
+                    <div class="flex gap-[36px] flex-wrap mt-[32px]">
+                        <div>
+                            <h4 class="text-theme_white font-normal text-md sm:text-lg md:text-xl">Monday - Friday</h4>
+                            <p class="text-[#D2D2D2] font-light font-sans text-sm sm:text-lg mt-[10px] md:mt-[11px]">12:00 - 14:45</p>
+                        </div>
+                        <div>
+                            <h4 class="text-theme_white font-normal text-md sm:text-lg md:text-xl">Saturday</h4>
+                            <p class="text-[#D2D2D2] font-light font-sans text-sm sm:text-lg mt-[10px] md:mt-[11px]">12:00 - 14:45</p>
+                        </div>
+                        <div>
+                            <h4 class="text-theme_white font-normal text-md sm:text-lg md:text-xl">Sunday</h4>
+                            <p class="text-[#D2D2D2] font-light font-sans text-sm sm:text-lg mt-[10px] md:mt-[11px]">12:00 - 14:45</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8 sm:gap-[46px] flex-wrap mt-[50px]">
+                        <div>
+                            <div class="flex items-center gap-[16px]">
+                                <span class="flex items-center justify-center rounded-full bg-primary h-[40px] w-[40px]">
+                                    <svg class="fill-[#fff] size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                                </span>
+                                <h4 class="text-theme_white font-light text-md sm:text-lg md:text-xl">Phone</h4>
+                            </div>
+                            <p class="text-primary text-[15px] sm:text-md md:text-lg font-light font-sans mt-[9px] cursor-pointer">+971 4 423 0932</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-[16px]">
+                                <span class="flex items-center justify-center rounded-full bg-primary h-[40px] w-[40px]">
+                                    <svg class="fill-[#fff] h-[22px] w-[22px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                                </span>
+                                <h4 class="text-theme_white font-light text-md sm:text-lg md:text-xl">Email</h4>
+                            </div>
+                            <p class="text-primary text-[15px] sm:text-md md:text-lg font-light font-sans mt-[9px] cursor-pointer">Example@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl sm:text-3xl md:text-[32px] font-light text-theme_white">Navigation</h3>
+                <div class="mt-[26px]">
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="/">Home</a></p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="./src/pages/about-us.html">About Us</a></p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="./src/pages/main-manu.html">Menu</a></p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="./src/pages/about-us.html">Gallery</a></p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="">Blogs</a></p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="./src/pages/membership.html">Membership</a></p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="./src/pages/contact-us.html">Contact Us</a></p>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl sm:text-3xl md:text-[32px] font-light text-theme_white">Our Menu</h3>
+                <div class="mt-[26px]">
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer">Chicken Olive Pasta</p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer">Spaghettis with lobia </p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer">Pasta with Tomato</p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer">Pasta with green leaf</p>
+                    <a href="./main-manu.html" class="flex items-center gap-[5px] mt-[16px]">
+                        <p class="text-primary text-lg md:text-[19px] cursor-pointer">See More</p>
+                        <svg class="fill-primary h-[18px] w-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>                              
+                    </a>
+                </div>
+            </div>
+            <div class="col-span-2 xl:col-span-1">
+                <h3 class="text-2xl sm:text-3xl md:text-[32px] font-light text-theme_white">Follow Us</h3>
+                <div class="flex items-center gap-[16px] mt-[26px]">
+                    <a href=""><img class="h-[26px]" src="/assets/images/facebook.png" alt=""></a>
+                    <a href=""><img class="h-[26px]" src="/assets/images/instagram.png" alt=""></a>
+                    <a href=""><img class="h-[26px]" src="/assets/images/whatsapp.png" alt=""></a>
+                </div>
+                <h3 class="text-2xl sm:text-3xl md:text-[32px] font-light text-theme_white mt-12">Our Location</h3>
+                <div class="mt-[22px]">
+                    <div class="w-full flex-1">
+                        <iframe class="rounded-[18px] w-full h-[200px] sm:h-[230px] xl:h-[180px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.2398459680885!2d55.2739340759969!3d25.19513283178314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f68299ccbf28d%3A0x93d89847470ba3e0!2sBice%20Mare%20Restaurant!5e0!3m2!1sen!2s!4v1723538823325!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="py-[10px] bg-primary">
+        <p class="text-center font-normal text-theme_white text-sm sm:text-[16px] font-sans line-clamp-1 px-4">
+            Copyright 2024, All Rights Reserved 
+        </p>
+    </div>
+
+    <!-- All Popups -->
+    
+    <section class="hidden h-[100vh] w-full bg-theme_black/60 fixed inset-0 z-50" id="main_hamburger">
+        <div class="flex items-center justify-end h-full w-full">
+            <div class="max-w-96 w-[83%] bg-theme_white h-full">
+                <div class="flex items-center justify-end p-6">
+                    <span class="flex items-center justify-center cursor-pointer" onclick="close_hamburger()">
+                        <svg class="fill-[#202020] h-7 w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </span>
+                </div>
+                <div class="w-full flex flex-col gap-[6px]">
+                    <a href="/" class="px-5 py-3 hover:bg-secondry text-theme_black transition-all cursor-pointer">
+                        Home
+                    </a>
+                    <a href="./main-manu.html" class="px-5 py-3 bg-primary text-theme_white transition-all cursor-pointer ">
+                        Menu
+                    </a>
+                    <a href="./gallery.html" class="px-5 py-3 hover:bg-secondry text-theme_black transition-all cursor-pointer ">
+                        Gallery
+                    </a>
+                    <a href="./membership.html" class="px-5 py-3 hover:bg-secondry text-theme_black transition-all cursor-pointer ">
+                        Memberships
+                    </a>
+                    <a href="./contact-us.html" class="px-5 py-3 hover:bg-secondry text-theme_black transition-all cursor-pointer ">
+                        Contact
+                    </a>
+                    <div class="p-4">
+                        <a href="./contact-us.html" class="border max-w-max border-primary transition-all bg-primary text-theme_white tracking-wide flex items-center justify-center rounded-lg px-[17px] text-lg py-[7px] cursor-pointer">
+                            Reservation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+
+    <section class="h-full w-full fixed inset-0 z-40 transition-all hidden bg-theme_black/80" id="video_main_popup" ondblclick="close_video_popup()">
+        <span class="absolute top-5 right-5 cursor-pointer" onclick="cancle_video_popup()">
+            <svg class="h-7 w-7 fill-theme_white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+        </span>
+        <div class="h-full w-full flex items-center justify-center p-7 z-50">
+            <video id="video" class="max-w-[1220px] w-full rounded-2xl" src="/assets/🐟 Omega 3 gelatin capsules - Fish Oil [ Production line ].mp4" controls></video>
+        </div>
+    </section>
+
+    <script src="/src/app.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+        // Reviews Slides
+
+        var swiper = new Swiper('.swiper2', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next-review',
+                prevEl: '.swiper-button-prev-review',
+            },
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 1600,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                300: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1300: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            }
+        });
+    </script>
+</body>
+</html>

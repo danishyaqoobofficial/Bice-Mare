@@ -119,3 +119,18 @@ function hello(e) {
         vvvv.classList.add('!bg-primary', '!text-theme_white');
     }
 }
+
+// 
+
+function blogCategory(e) {
+    let main_category_button = e.closest('#main_category_button');
+    let blogCategoryButton = main_category_button.querySelector('#blogCategoryButton');
+    let changing_text_main = document.getElementById('changing_text_main');
+    let changing_text = document.getElementById('changing_text');
+    let Archiving_main = document.getElementById('Archiving_main');
+
+
+    changing_text_main.classList.add('!block');
+    changing_text.innerHTML = blogCategoryButton.innerText
+    Archiving_main.classList.add('!block')
+}
