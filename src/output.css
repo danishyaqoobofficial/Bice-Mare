@@ -1009,6 +1009,10 @@ video {
   height: 460px;
 }
 
+.h-\[20px\] {
+  height: 20px;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -1083,6 +1087,10 @@ video {
 
 .w-0 {
   width: 0px;
+}
+
+.w-\[20px\] {
+  width: 20px;
 }
 
 .max-w-96 {
@@ -1662,6 +1670,11 @@ video {
   padding-bottom: 8rem;
 }
 
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1798,6 +1811,26 @@ video {
 
 .leading-\[50px\] {
   line-height: 50px;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
+}
+
+.leading-\[80px\] {
+  line-height: 80px;
+}
+
+.leading-\[82px\] {
+  line-height: 82px;
+}
+
+.leading-\[86px\] {
+  line-height: 86px;
 }
 
 .tracking-wide {
@@ -2071,6 +2104,11 @@ video {
     padding-bottom: 1rem;
   }
 
+  .sm\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
   .sm\:pb-24 {
     padding-bottom: 6rem;
   }
@@ -2199,6 +2237,10 @@ video {
     height: 580px;
   }
 
+  .md\:h-\[26px\] {
+    height: 26px;
+  }
+
   .md\:w-32 {
     width: 8rem;
   }
@@ -2209,6 +2251,10 @@ video {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-\[26px\] {
+    width: 26px;
   }
 
   .md\:grid-cols-2 {
@@ -2503,6 +2549,11 @@ video {
     padding-bottom: 90px;
   }
 
+  .lg\:py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2603,6 +2654,11 @@ video {
   .xl\:py-14 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+  }
+
+  .xl\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .xl\:pr-8 {
