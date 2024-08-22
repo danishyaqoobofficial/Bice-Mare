@@ -140,11 +140,11 @@ function blogCategory(e) {
 
 
 window.addEventListener('load', ()=> {
-    let image = document.getElementById('image');
+    let shimmer = document.getElementById('shimmer');
 
-    if (image) {
-        image.classList.add('animate-pulse');
+    if (shimmer) {
+        shimmer.classList.add('!hidden');
     }else{
-        image.classList.add('animate-pulse');
+        shimmer.classList.add('!block');
     }
 })
