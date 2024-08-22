@@ -1138,6 +1138,16 @@ video {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.\!animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite !important;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1432,6 +1442,11 @@ video {
 
 .bg-theme_black\/50 {
   background-color: rgb(32 32 32 / 0.5);
+}
+
+.bg-\[\#dadada\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 218 218 / var(--tw-bg-opacity));
 }
 
 .bg-cover {

@@ -141,10 +141,11 @@ function blogCategory(e) {
 
 window.addEventListener('load', ()=> {
     let loader = document.getElementById('loader');
+    let image = document.getElementById('image');
 
-    if (loader) {
-        loader.classList.add('!hidden');
+    if (image) {
+        image.classList.add('animate-pulse');
     }else{
-        loader.classList.remoave('!hidden');
+        image.classList.add('animate-pulse');
     }
 })
