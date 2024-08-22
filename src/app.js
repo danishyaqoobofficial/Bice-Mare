@@ -139,7 +139,7 @@ function blogCategory(e) {
 // 
 
 
-window.addEventListener('load', ()=> {
+window.addEventListener('2s', ()=> {
     let shimmer = document.getElementById('shimmer');
 
     if (shimmer) {

@@ -1159,6 +1159,16 @@ video {
   animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1463,6 +1473,11 @@ video {
 .bg-\[\#bababa\] {
   --tw-bg-opacity: 1;
   background-color: rgb(186 186 186 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#3f3f3f\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(63 63 63 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
