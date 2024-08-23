@@ -1,16 +1,15 @@
 let value = true;
-let video_play_button = document.getElementById('video_play_button');
 let main_hamburger = document.getElementById('main_hamburger');
 let video = document.getElementById('video');
 
-video_play_button.addEventListener('click', () => {
+function video_play_button() {
     let video_main_popup = document.getElementById('video_main_popup');
 
-    if (video_play_button) {
+    if (video_main_popup) {
         video_main_popup.classList.add('!block');
         video.play();
     }
-})
+}
 
 function cancle_video_popup() {
     let video_main_popup = document.getElementById('video_main_popup');
@@ -22,23 +21,21 @@ function cancle_video_popup() {
 
 // Counting Numbers
 
-const counters = document.querySelectorAll('.value');
-const speed = 400;
+let allSpans = document.querySelectorAll('.value');
+let timing = 5000;
 
-counters.forEach( counter => {
-   const animate = () => {
-      const value = +counter.getAttribute('akhi');
-      const data = +counter.innerText;
-     
-      const time = value / speed;
-     if(data < value) {
-          counter.innerText = Math.ceil(data + time);
-          setTimeout(animate, 1);
-        }else{
-          counter.innerText = value;
-        } 
-   }
-   animate();
+allSpans.forEach(AllSpan => {
+    let startValue = 0;
+    let endValue = parseInt(AllSpan.getAttribute('increaseValue'));
+    
+    let duration = Math.floor(timing / endValue);
+    let counter = setInterval(() => {
+        startValue += 1;
+        AllSpan.textContent = startValue;
+        if (startValue == endValue) {
+            clearInterval(counter);
+        }
+    }, duration);
 });
 
 // FAQs
@@ -139,27 +136,3 @@ function blogCategory(e) {
 // 
 
 
-window.addEventListener('load', () => {
-    let shimmer = document.getElementById('shimmer');
-    let outer_shimmer = document.getElementById('outer_shimmer');
-    let images = outer_shimmer.getElementsByTagName('img');
-    let imagesLoaded = 0;
-
-    function checkAllImagesLoaded() {
-        if (imagesLoaded === images.length) {
-            shimmer.classList.add('hidden');
-            outer_shimmer.classList.remove('hidden');
-        }
-    }
-    for (let i = 0; i < images.length; i++) {
-        if (images[i].complete) {
-            imagesLoaded++;
-            checkAllImagesLoaded();
-        } else {
-            images[i].addEventListener('load', () => {
-                imagesLoaded++;
-                checkAllImagesLoaded();
-            });
-        }
-    }
-});
