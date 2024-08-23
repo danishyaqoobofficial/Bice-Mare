@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="./assets/css/custom.css">
-    <title>Bice Mare</title>
+    <title>Best Italian Seafood Dining in Burj Khalifa Dubai - BiCE Mare Restaurant</title>
+    <meta name="description" content="Among the best italian seafood restaurants in Burj Khalifa Dubai, BiCE Mare offers the best dining experience serving Italian cuisine and fresh italian seafood.">
 </head>
 <body>
     <div class="py-[10px] bg-primary">
@@ -19,13 +20,13 @@
             <div class="xl:block hidden flex-1">
                 <div class="flex items-center gap-5 justify-end">
                     <div class="flex items-center gap-[20px]">
-                        <a href=""><img class="h-[26px]" src="./assets/images/facebook.png" alt=""></a>
-                        <a href=""><img class="h-[26px]" src="./assets/images/instagram.png" alt=""></a>
-                        <a target="_blank" href="https://wa.me/+97144230932"><img class="h-[26px]" src="./assets/images/whatsapp.png" alt=""></a>
+                        <a target="_blank" href="https://facebook.com/BICEMare"><img class="h-[26px]" src="./assets/images/facebook.png" alt=""></a>
+                        <a target="_blank" href="http://instagram.com/bicemare/"><img class="h-[26px]" src="./assets/images/instagram.png" alt=""></a>
+                        <a target="_blank" href="https://wa.me/+97144230982"><img class="h-[26px]" src="./assets/images/whatsapp.png" alt=""></a>
                     </div>
-                    <a href="./src/pages/contact-us.html" class="border max-w-max border-primary transition-all hover:bg-primary hover:text-theme_white tracking-wide flex items-center justify-center rounded-lg text-theme_black px-[17px] text-lg py-[7px] cursor-pointer">
+                    <div onclick="reservation_popup()" class="border max-w-max border-primary transition-all hover:bg-primary hover:text-theme_white tracking-wide flex items-center justify-center rounded-lg text-theme_black px-[17px] text-lg py-[7px] cursor-pointer">
                         Reservation
-                    </a>
+                    </div>
                 </div>
             </div>
             <a href="/"><img src="/assets/images/logo.png" class="h-11 sm:h-[52px]" alt=""></a>
@@ -675,6 +676,17 @@
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hidden" id="reservation_popup_main">
+        <div class="h-[100vh] w-full fixed z-50 top-0 bg-theme_black/50 flex items-center justify-center">
+            <span class="absolute top-[28px] right-[28px] cursor-pointer" onclick="reservation_popup_close()">
+                <svg class="fill-[#fff] h-[25px] w-[25px] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+            </span>
+            <div id="ot-widget-container13" data-r3uid="db7bf1bd-4dff-4fd8-a933-cabf4a1b960a13">
+                <iframe data-test="reservation-widget-iframe" src="https://www.opentable.ae/widget/reservation/mural?rid=169399&amp;type=standard&amp;color=1&amp;dark=false&amp;iframe=true&amp;domain=ae&amp;lang=en-US&amp;newtab=false&amp;ot_source=Restaurant website&amp;cfe=true&amp;uuid=db7bf1bd-4dff-4fd8-a933-cabf4a1b960a13&amp;theme=standard" width="224" height="301" frameborder="0" scrolling="no" name="opentable-make-reservation-widget" title="OpenTable make reservation widget"></iframe>
             </div>
         </div>
     </section>

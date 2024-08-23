@@ -114,4 +114,12 @@ function blogCategory(e) {
 
 // 
 
+let reservation_popup_main = document.getElementById('reservation_popup_main');
 
+function reservation_popup() {
+    reservation_popup_main.classList.add('!block');
+}
+
+function reservation_popup_close() {
+    reservation_popup_main.classList.remove('!block');
+}
