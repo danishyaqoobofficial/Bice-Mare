@@ -1,24 +1,3 @@
-let value = true;
-let main_hamburger = document.getElementById('main_hamburger');
-let video = document.getElementById('video');
-
-function video_play_button() {
-    let video_main_popup = document.getElementById('video_main_popup');
-
-    if (video_main_popup) {
-        video_main_popup.classList.add('!block');
-        video.play();
-    }
-}
-
-function cancle_video_popup() {
-    let video_main_popup = document.getElementById('video_main_popup');
-    if (video_main_popup) {
-        video_main_popup.classList.remove('!block');
-        video.pause();
-    }
-}
-
 // Counting Numbers
 
 let allSpans = document.querySelectorAll('.value');
