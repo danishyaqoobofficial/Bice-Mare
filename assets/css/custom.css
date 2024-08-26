@@ -65,10 +65,9 @@ body {
 .header {
     position: sticky;
     top: 0;
-    background-color: #f8f9fa;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #ddd;
-    z-index: 1000;
 }
 .section {
     transition: background-color 0.3s ease;
