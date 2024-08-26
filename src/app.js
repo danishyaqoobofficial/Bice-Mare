@@ -142,9 +142,4 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Header or Section element not found.');
         }
     });
-
-    const section = document.querySelector('.section');
-    if (section) {
-        section.style.backgroundColor = '#FDEBEC';
-    }
 });
