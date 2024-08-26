@@ -123,3 +123,28 @@ function reservation_popup() {
 function reservation_popup_close() {
     reservation_popup_main.classList.remove('!block');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener('scroll', function () {
+        const header = document.querySelector('.header');
+        const section = document.querySelector('.section');
+
+        if (header && section) {
+            const headerBottom = header.getBoundingClientRect().bottom;
+            const sectionTop = section.getBoundingClientRect().top;
+            
+            if (sectionTop <= headerBottom) {
+                section.style.backgroundColor = '#FDEBEC';
+            } else {
+                section.style.backgroundColor = '#FFFFFF';
+            }
+        } else {
+            console.error('Header or Section element not found.');
+        }
+    });
+
+    const section = document.querySelector('.section');
+    if (section) {
+        section.style.backgroundColor = '#FDEBEC';
+    }
+});
