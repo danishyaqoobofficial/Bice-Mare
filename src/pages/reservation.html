@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="/./assets/css/custom.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="py-[10px] bg-primary">
+        <p class="text-center font-normal text-theme_white text-sm sm:text-[16px] font-sans line-clamp-1 px-4">
+            Enjoy a delicious meal with us and get 20% off your total bill this New year!
+        </p>
+    </div>
+    <header class="border-b border-grey2 py-3 sm:py-4 lg:py-5 sticky top-0 z-40 bg-theme_white">
+        <div class="max-w-[1700px] mx-auto flex items-center justify-between px-6 sm:px-10 md:px-12 lg:px-20 gap-10 xl:flex-row-reverse">
+            <div class="xl:block hidden flex-1">
+                <div class="flex items-center gap-5 justify-end">
+                    <div class="flex items-center gap-[20px]">
+                        <a href=""><img class="h-[26px]" src="/assets/images/facebook.png" alt=""></a>
+                        <a href=""><img class="h-[26px]" src="/assets/images/instagram.png" alt=""></a>
+                        <a href=""><img class="h-[26px]" src="/assets/images/whatsapp.png" alt=""></a>
+                    </div>
+                    <a href="./contact-us.html" class="border max-w-max border-primary transition-all hover:bg-primary hover:text-theme_white tracking-wide flex items-center justify-center rounded-lg text-theme_black px-[17px] text-lg py-[7px] cursor-pointer">
+                        Reservation
+                    </a>
+                </div>
+            </div>
+            <a href="/"><img src="/assets/images/logo.png" class="h-11 sm:h-[52px]" alt=""></a>
+            <div class="flex-1 hidden lg:block">
+                <div class="flex items-center gap-20">
+                    <div class="flex items-center gap-11">
+                        <a href="/" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Home</a>
+                        <a href="./main-manu.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Menu</a>
+                        <a href="./gallery.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Gallery</a>
+                        <a href="./membership.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Memberships</a>
+                        <a href="./contact-us.html" class="text-xl cursor-pointer hover:text-theme_black font-light transition-all text-grey1 tracking-wide">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <div class="hidden sm:block xl:hidden">
+                    <div class="flex items-center justify-end flex-1">
+                        <a href="./contact-us.html" class="border max-w-max border-primary transition-all hover:bg-primary hover:text-theme_white tracking-wide flex items-center justify-center rounded-lg text-theme_black px-[17px] text-lg py-[7px] cursor-pointer">
+                            Reservation
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:hidden block" onclick="open_hamburger()">
+                    <span class="flex items-center justify-center cursor-pointer">
+                        <svg class="fill-[#000] h-6 sm:h-7 w-6 sm:w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="w-full h-[560px] sm:h-[620px] md:h-[680px] bg-cover bg-no-repeat bg-center" style="background-image: url(/./assets/images/resurvation.png);">
+        <div class="h-full w-full bg-theme_black/70">
+            <div class="h-full max-w-[900px] px-4 mx-auto flex flex-col items-center justify-center gap-2">
+                <h1 class="text-center font-medium text-3xl sm:text-4xl md:text-5xl text-theme_white ">Book Your <span class="text-primary">Table</span></h1>
+                <p class="text-center text-theme_white md:text-lg font-sans">We accept online reservations for parties up to 20 guests</p>
+                <div class="pt-7">
+                    <div id="ot-widget-container13" data-r3uid="e7fc4800-48b3-4131-80ca-d55aa46089d213">
+                        <iframe data-test="reservation-widget-iframe" src="https://www.opentable.ae/widget/reservation/mural?rid=169399&amp;type=standard&amp;color=1&amp;dark=false&amp;iframe=true&amp;domain=ae&amp;lang=en-US&amp;newtab=false&amp;ot_source=Restaurant website&amp;cfe=true&amp;uuid=e7fc4800-48b3-4131-80ca-d55aa46089d213&amp;theme=standard" width="224" height="301" frameborder="0" scrolling="no" name="opentable-make-reservation-widget" title="OpenTable make reservation widget"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-theme_black w-full py-10 md:py-14 lg:py-[70px]">
+        <div class="max-w-[1700px] mx-auto px-6 sm:px-10 md:px-12 lg:px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-12 xl:gap-0 ">
+            <div class="col-span-2 xl:pr-8">
+                <a href="/"><img src="/assets/images/logo_white.png" class="h-[90px]" alt=""></a>
+                <p class="text-theme_white text-[15px] sm:text-md md:text-lg mt-[14px] font-sans font-light">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.Jorem</p>
+                <div class="mt-[40px]">
+                    <h3 class="text-2xl sm:text-3xl md:text-[32px] font-light text-theme_white">Opening hours</h3>
+                    <div class="flex gap-[36px] flex-wrap mt-[32px]">
+                        <div>
+                            <h4 class="text-theme_white font-normal text-md sm:text-lg md:text-xl">Monday - Friday</h4>
+                            <p class="text-[#D2D2D2] font-light font-sans text-sm sm:text-lg mt-[10px] md:mt-[11px]">12:00 - 14:45</p>
+                        </div>
+                        <div>
+                            <h4 class="text-theme_white font-normal text-md sm:text-lg md:text-xl">Saturday</h4>
+                            <p class="text-[#D2D2D2] font-light font-sans text-sm sm:text-lg mt-[10px] md:mt-[11px]">12:00 - 14:45</p>
+                        </div>
+                        <div>
+                            <h4 class="text-theme_white font-normal text-md sm:text-lg md:text-xl">Sunday</h4>
+                            <p class="text-[#D2D2D2] font-light font-sans text-sm sm:text-lg mt-[10px] md:mt-[11px]">12:00 - 14:45</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8 sm:gap-[46px] flex-wrap mt-[50px]">
+                        <div>
+                            <div class="flex items-center gap-[16px]">
+                                <span class="flex items-center justify-center rounded-full bg-primary h-[40px] w-[40px]">
+                                    <svg class="fill-[#fff] size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                                </span>
+                                <h4 class="text-theme_white font-light text-md sm:text-lg md:text-xl">Phone</h4>
+                            </div>
+                            <p class="text-primary text-[15px] sm:text-md md:text-lg font-light font-sans mt-[9px] cursor-pointer">+971 4 423 0932</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-[16px]">
+                                <span class="flex items-center justify-center rounded-full bg-primary h-[40px] w-[40px]">
+                                    <svg class="fill-[#fff] h-[22px] w-[22px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                                </span>
+                                <h4 class="text-theme_white font-light text-md sm:text-lg md:text-xl">Email</h4>
+                            </div>
+                            <p class="text-primary text-[15px] sm:text-md md:text-lg font-light font-sans mt-[9px] cursor-pointer">Example@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl sm:text-3xl md:text-[32px] font-light text-theme_white">Navigation</h3>
+                <div class="mt-[26px]">
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="/">Home</a></p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="./src/pages/about-us.html">About Us</a></p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="./src/pages/main-manu.html">Menu</a></p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="./src/pages/about-us.html">Gallery</a></p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="">Blogs</a></p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="./src/pages/membership.html">Membership</a></p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer"><a href="./src/pages/contact-us.html">Contact Us</a></p>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl sm:text-3xl md:text-[32px] font-light text-theme_white">Our Menu</h3>
+                <div class="mt-[26px]">
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer">Chicken Olive Pasta</p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer">Spaghettis with lobia </p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer">Pasta with Tomato</p>
+                    <p class="mt-[19px] text-[15px] sm:text-md md:text-lg text-theme_white cursor-pointer">Pasta with green leaf</p>
+                    <a href="./main-manu.html" class="flex items-center gap-[5px] mt-[16px]">
+                        <p class="text-primary text-lg md:text-[19px] cursor-pointer">See More</p>
+                        <svg class="fill-primary h-[18px] w-[18px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>                              
+                    </a>
+                </div>
+            </div>
+            <div class="col-span-2 xl:col-span-1">
+                <h3 class="text-2xl sm:text-3xl md:text-[32px] font-light text-theme_white">Follow Us</h3>
+                <div class="flex items-center gap-[16px] mt-[26px]">
+                    <a href=""><img class="h-[26px]" src="/assets/images/facebook.png" alt=""></a>
+                    <a href=""><img class="h-[26px]" src="/assets/images/instagram.png" alt=""></a>
+                    <a href=""><img class="h-[26px]" src="/assets/images/whatsapp.png" alt=""></a>
+                </div>
+                <h3 class="text-2xl sm:text-3xl md:text-[32px] font-light text-theme_white mt-12">Our Location</h3>
+                <div class="mt-[22px]">
+                    <div class="w-full flex-1">
+                        <iframe class="rounded-[18px] w-full h-[200px] sm:h-[230px] xl:h-[180px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.2398459680885!2d55.2739340759969!3d25.19513283178314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f68299ccbf28d%3A0x93d89847470ba3e0!2sBice%20Mare%20Restaurant!5e0!3m2!1sen!2s!4v1723538823325!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="py-[10px] bg-primary">
+        <p class="text-center font-normal text-theme_white text-sm sm:text-[16px] font-sans line-clamp-1 px-4">
+            Copyright 2024, All Rights Reserved 
+        </p>
+    </div>
+</body>
+</html>
