@@ -646,6 +646,10 @@ video {
   right: 8rem;
 }
 
+.right-9 {
+  right: 2.25rem;
+}
+
 .\!z-0 {
   z-index: 0 !important;
 }
@@ -1032,6 +1036,22 @@ video {
   height: 100%;
 }
 
+.h-44 {
+  height: 11rem;
+}
+
+.h-64 {
+  height: 16rem;
+}
+
+.h-72 {
+  height: 18rem;
+}
+
+.h-52 {
+  height: 13rem;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -1112,6 +1132,10 @@ video {
   width: 100%;
 }
 
+.w-52 {
+  width: 13rem;
+}
+
 .max-w-96 {
   max-width: 24rem;
 }
@@ -1171,6 +1195,10 @@ video {
 
 .resize-none {
   resize: none;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .grid-cols-1 {
@@ -1295,6 +1323,10 @@ video {
 
 .gap-32 {
   gap: 8rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .overflow-hidden {
@@ -1659,6 +1691,11 @@ video {
   padding-bottom: 8px;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -2018,6 +2055,10 @@ video {
     height: 620px;
   }
 
+  .sm\:h-60 {
+    height: 15rem;
+  }
+
   .sm\:w-64 {
     width: 16rem;
   }
@@ -2032,6 +2073,10 @@ video {
 
   .sm\:w-\[70\%\] {
     width: 70%;
+  }
+
+  .sm\:w-60 {
+    width: 15rem;
   }
 
   .sm\:-translate-y-24 {
@@ -2278,6 +2323,14 @@ video {
     height: 680px;
   }
 
+  .md\:h-72 {
+    height: 18rem;
+  }
+
+  .md\:h-96 {
+    height: 24rem;
+  }
+
   .md\:w-32 {
     width: 8rem;
   }
@@ -2292,6 +2345,10 @@ video {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-64 {
+    width: 16rem;
   }
 
   .md\:grid-cols-2 {
@@ -2460,6 +2517,14 @@ video {
     position: absolute;
   }
 
+  .lg\:right-32 {
+    right: 8rem;
+  }
+
+  .lg\:top-36 {
+    top: 9rem;
+  }
+
   .lg\:mt-48 {
     margin-top: 12rem;
   }
@@ -2508,6 +2573,11 @@ video {
     width: 80%;
   }
 
+  .lg\:max-w-max {
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+
   .lg\:\!scale-75 {
     --tw-scale-x: .75 !important;
     --tw-scale-y: .75 !important;
@@ -2544,6 +2614,10 @@ video {
 
   .lg\:gap-8 {
     gap: 2rem;
+  }
+
+  .lg\:gap-0 {
+    gap: 0px;
   }
 
   .lg\:gap-x-\[20px\] {
@@ -2604,12 +2678,25 @@ video {
     padding-bottom: 90px;
   }
 
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .lg\:pb-0 {
     padding-bottom: 0px;
   }
 
   .lg\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .lg\:pl-52 {
+    padding-left: 13rem;
+  }
+
+  .lg\:pb-32 {
+    padding-bottom: 8rem;
   }
 
   .lg\:text-3xl {
