@@ -10,6 +10,12 @@
     <title>Best Italian Seafood Dining in Burj Khalifa Dubai - BiCE Mare Restaurant</title>
     <meta name="description"
         content="Among the best italian seafood restaurants in Burj Khalifa Dubai, BiCE Mare offers the best dining experience serving Italian cuisine and fresh italian seafood.">
+        <style>
+            button:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+        </style>
 </head>
 
 <body>
@@ -1004,7 +1010,7 @@
     <section class="hidden" id="reservation_popup_main">
         <div class="h-[100vh] w-full fixed z-50 p-5 top-0 flex items-center justify-center bg-[#202020]/70">
             <div class="max-h-[800px] overflow-y-auto max-w-[992px] w-full mx-auto bg-[#fff] rounded-3xl shadow-lg shadow-slate-800">
-                <div class="">
+                <div class="" id="clise_at_last">
                     <div class="px-5 md:px-8 lg:px-14 py-4 md:py-5 lg:py-9 space-y-8">
                         <div class="flex items-center justify-between">
                             <p class="text-[#E50512] text-xl md:text-2xl ">Sign In</p>
@@ -1030,9 +1036,9 @@
                                 </svg>
                             </span>
                         </div>
-                        <!-- <h2 class="text-[#202020] text-2xl md:text-3xl lg:text-4xl ">Reservation at BICE Mare - Dubai</h2> -->
+                        <h2 class="text-[#202020] text-2xl md:text-3xl lg:text-4xl ">Reservation at BICE Mare - Dubai</h2>
                     </div>
-                    <!-- <div class="px-6 py-5 bg-[#202020] flex items-center justify-center">
+                    <div class="px-6 py-5 bg-[#202020] flex items-center justify-center">
                         <div class="mx-auto max-w-max py-2 flex w-full overflow-x-auto bg-">
                             <div class="p-[5px] flex gap-2 bg-[#fff] rounded-lg">
                                 <div
@@ -1045,22 +1051,24 @@
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="px-5 md:px-8 lg:px-14 py-4 md:py-5 lg:pt-5 lg:pb-12 relative space-y-5">
-                        <!-- <img class="absolute right-0 bottom-0 z-20" src="./assets/images/booking1.png" alt="">
-                        <img class="absolute left-0 bottom-0 z-20" src="./assets/images/booking2.png" alt=""> -->
-                        <!-- <div class=""
+                        <img class="absolute right-0 bottom-0 z-20" src="./assets/images/booking1.png" alt="">
+                        <img class="absolute left-0 bottom-0 z-20" src="./assets/images/booking2.png" alt="">
+                        <div class=""
                             id="reservationPopup">
                             <div id="inputForm">
-                                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 md:gap-0 md:border border-[#D2D2D2] rounded-lg">
+                                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 md:gap-0 md:border border-[#D2D2D2] rounded-lg" id="inputs_grid">
                                         <div class="relative ">
-                                            <button id="peopleDropdown"
-                                                class="w-full bg-gray-100 md:border-r border border-[#D2D2D2] md:rounded-none rounded-lg text-[#797979] font-sans font-medium py-2 px-3 flex items-center justify-between text-left h-full">
-                                                People
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <div class="relative">
+                                                <button id="peopleDropdown"
+                                                    class="w-full bg-gray-100 border-r relative z-30 border-[#D2D2D2] text-[#797979] font-sans py-2 px-3 flex items-center justify-between text-left h-full">
+                                                    People
+                                                </button>
+                                                <svg class="absolute h-full z-0 right-2 top-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M7.78981 8.00017L16.2098 8.00017C16.5422 7.99969 16.868 8.09336 17.1494 8.27033C17.4308 8.44731 17.6563 8.70035 17.7998 9.00017C17.9678 9.35592 18.0326 9.75171 17.9866 10.1424C17.9406 10.5332 17.7858 10.9031 17.5398 11.2102L13.3298 16.3102C13.1646 16.5008 12.9603 16.6537 12.7309 16.7585C12.5014 16.8633 12.2521 16.9175 11.9998 16.9175C11.7475 16.9175 11.4982 16.8633 11.2688 16.7585C11.0393 16.6537 10.835 16.5008 10.6698 16.3102L6.45981 11.2102C6.2138 10.9031 6.05899 10.5332 6.01302 10.1424C5.96706 9.75171 6.03178 9.35592 6.19981 9.00017C6.34335 8.70035 6.56887 8.44731 6.85026 8.27033C7.13164 8.09336 7.4574 7.99969 7.78981 8.00017Z" fill="#797979"/>
                                                 </svg>                                                        
-                                            </button>
+                                            </div>
                                             <ul id="peopleOptions"
                                                 class="absolute hidden bg-[#fff] rounded shadow-lg mt-1 w-full z-50 text-[#797979] font-sans py-2 max-h-[340px] overflow-y-auto">
                                                 <li class="cursor-pointer py-2 px-3 transition-all hover:bg-[#797979]/30"
@@ -1079,16 +1087,18 @@
                                         </div>
                                         <div class="">
                                             <input type="date" id="dateInput"
-                                                class="w-full bg-gray-100 py-2 px-3 md:border-r border border-[#D2D2D2] md:rounded-none rounded-lg text-[#797979] font-sans font-medium" />
+                                                class="w-full bg-gray-100 py-2 px-3 border-r border-[#D2D2D2] text-[#797979] font-sans outline-none" />
                                         </div>
                                         <div class="relative">
-                                            <button id="timeDropdown"
-                                                class="w-full bg-gray-100 md:border-r border border-[#D2D2D2] md:rounded-none rounded-lg text-[#797979] font-sans font-medium py-2 px-3 flex items-center justify-between text-left h-full">
-                                                Time
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <div class="relative">
+                                                <button id="timeDropdown"
+                                                    class="w-full bg-gray-100 relative z-30 border-r border-[#D2D2D2] text-[#797979] font-sans py-2 px-3 flex items-center justify-between text-left h-full">
+                                                    Time
+                                                </button>
+                                                <svg class="absolute h-full z-0 right-2 top-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M7.78981 8.00017L16.2098 8.00017C16.5422 7.99969 16.868 8.09336 17.1494 8.27033C17.4308 8.44731 17.6563 8.70035 17.7998 9.00017C17.9678 9.35592 18.0326 9.75171 17.9866 10.1424C17.9406 10.5332 17.7858 10.9031 17.5398 11.2102L13.3298 16.3102C13.1646 16.5008 12.9603 16.6537 12.7309 16.7585C12.5014 16.8633 12.2521 16.9175 11.9998 16.9175C11.7475 16.9175 11.4982 16.8633 11.2688 16.7585C11.0393 16.6537 10.835 16.5008 10.6698 16.3102L6.45981 11.2102C6.2138 10.9031 6.05899 10.5332 6.01302 10.1424C5.96706 9.75171 6.03178 9.35592 6.19981 9.00017C6.34335 8.70035 6.56887 8.44731 6.85026 8.27033C7.13164 8.09336 7.4574 7.99969 7.78981 8.00017Z" fill="#797979"/>
                                                 </svg>    
-                                            </button>
+                                            </div>
                                             <ul id="timeOptions"
                                                 class="absolute hidden bg-[#fff] rounded shadow-lg mt-1 w-full z-50 text-[#797979] font-sans py-2 max-h-[340px] overflow-y-auto ">
                                                 <li class="cursor-pointer py-2 px-3 hover:bg-gray-200 transition-all hover:bg-[#797979]/30"
@@ -1106,13 +1116,15 @@
                                             </ul>
                                         </div>    
                                         <div class="relative">
-                                            <button id="seatingDropdown"
-                                                class="w-full bg-gray-100 md:border-r border border-[#D2D2D2] md:rounded-none rounded-lg text-[#797979] font-sans font-medium py-2 px-3 flex items-center justify-between text-left h-full">
-                                                Select
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <div class="relative">
+                                                <button id="seatingDropdown"
+                                                    class="w-full bg-gray-100 relative z-30 border-r border-[#D2D2D2] text-[#797979] font-sans py-2 px-3 flex items-center justify-between text-left h-full">
+                                                    Seating
+                                                </button>
+                                                <svg class="absolute h-full z-0 right-2 top-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M7.78981 8.00017L16.2098 8.00017C16.5422 7.99969 16.868 8.09336 17.1494 8.27033C17.4308 8.44731 17.6563 8.70035 17.7998 9.00017C17.9678 9.35592 18.0326 9.75171 17.9866 10.1424C17.9406 10.5332 17.7858 10.9031 17.5398 11.2102L13.3298 16.3102C13.1646 16.5008 12.9603 16.6537 12.7309 16.7585C12.5014 16.8633 12.2521 16.9175 11.9998 16.9175C11.7475 16.9175 11.4982 16.8633 11.2688 16.7585C11.0393 16.6537 10.835 16.5008 10.6698 16.3102L6.45981 11.2102C6.2138 10.9031 6.05899 10.5332 6.01302 10.1424C5.96706 9.75171 6.03178 9.35592 6.19981 9.00017C6.34335 8.70035 6.56887 8.44731 6.85026 8.27033C7.13164 8.09336 7.4574 7.99969 7.78981 8.00017Z" fill="#797979" />
                                                 </svg>
-                                            </button>
+                                            </div>
                                             <ul id="seatingOptions"
                                                 class="absolute hidden bg-[#fff] rounded shadow-lg mt-1 w-full z-50 text-[#797979] font-sans py-2 max-h-[340px] overflow-y-auto">
                                                 <li class="cursor-pointer py-2 px-3 hover:bg-gray-200 transition-all hover:bg-[#797979]/30" onclick="selectOption('seating', 'Indoor')">
@@ -1124,6 +1136,38 @@
                                             </ul>
                                         </div>
                                     </div>
+
+                                    <div class="hidden mt-4" id="radioBtns">
+                                        <div class="flex space-x-10">
+                                            <div class="flex items-center space-x-2">
+                                                <span class="h-4 w-4 rounded-full flex items-center justify-center p-[2px] border border-[#E50512]">
+                                                    <input type="radio" id="no-preference" name="row" class="peer block appearance-none w-full h-full rounded-full checked:border-[#E50512] checked:bg-[#E50512]">
+                                                </span>
+                                                <label for="no-preference" class="cursor-pointer text-gray-500 font-sans text-[#E50512]">No Preference</label>
+                                            </div>
+                                    
+                                            <div class="flex items-center space-x-2">
+                                                <span class="h-4 w-4 rounded-full flex items-center justify-center p-[2px] border border-[#E50512]">
+                                                    <input type="radio" id="first-row" name="row" class="peer block appearance-none w-full h-full rounded-full checked:border-[#E50512] checked:bg-[#E50512]">
+                                                </span>
+                                                <label for="first-row" class="cursor-pointer text-gray-500 font-sans text-[#E50512]">First Row</label>
+                                            </div>
+                                    
+                                            <div class="flex items-center space-x-2">
+                                                <span class="h-4 w-4 rounded-full flex items-center justify-center p-[2px] border border-[#E50512]">
+                                                    <input type="radio" id="second-row" name="row" class="peer block appearance-none w-full h-full rounded-full checked:border-[#E50512] checked:bg-[#E50512]">
+                                                </span>
+                                                <label for="second-row" class="cursor-pointer text-gray-500 font-sans text-[#E50512]">Second Row</label>
+                                            </div>
+                                    
+                                            <div class="flex items-center space-x-2">
+                                                <span class="h-4 w-4 rounded-full flex items-center justify-center p-[2px] border border-[#E50512]">
+                                                    <input type="radio" id="last-row" name="row" class="peer block appearance-none w-full h-full rounded-full checked:border-[#E50512] checked:bg-[#E50512]">
+                                                </span>
+                                                <label for="last-row" class="cursor-pointer text-gray-500 font-sans text-[#E50512]">Last Row</label>
+                                            </div>
+                                        </div>
+                                    </div>   
     
                                     <div id="timeSlots" class="hidden mt-4">
                                         <div class="flex items-center justify-center gap-4 flex-wrap mt-6">
@@ -1147,73 +1191,14 @@
                                                 onclick="selectTimeSlot('8:30 PM')">
                                                 8:30 PM
                                             </button>
-                                            <button class="bg-red-600 text-white py-2 px-9 rounded-md bg-[#E50512] flex items-center justify-center max-w-max cursor-pointer font-sans text-[#fff]"
-                                                onclick="selectTimeSlot('9:00 PM')">
-                                                9:00 PM
-                                            </button>
-                                            <button class="bg-red-600 text-white py-2 px-9 rounded-md bg-[#E50512] flex items-center justify-center max-w-max cursor-pointer font-sans text-[#fff]"
-                                                onclick="selectTimeSlot('9:30 PM')">
-                                                9:30 PM
-                                            </button>
                                         </div>
-                                    </div>
-    
-                                <div class="hidden mt-4" id="radioBtns">
-                                    <div class="flex space-x-10">
-                                        <div class="flex items-center space-x-2">
-                                            <span class="h-4 w-4 rounded-full flex items-center justify-center p-[2px] border border-[#E50512]">
-                                                <input type="radio" id="no-preference" name="row" class="peer block appearance-none w-full h-full rounded-full checked:border-[#E50512] checked:bg-[#E50512]">
-                                            </span>
-                                            <label for="no-preference" class="cursor-pointer text-gray-500 font-sans text-[#E50512]">No Preference</label>
-                                        </div>
-                                
-                                        <div class="flex items-center space-x-2">
-                                            <span class="h-4 w-4 rounded-full flex items-center justify-center p-[2px] border border-[#E50512]">
-                                                <input type="radio" id="first-row" name="row" class="peer block appearance-none w-full h-full rounded-full checked:border-[#E50512] checked:bg-[#E50512]">
-                                            </span>
-                                            <label for="first-row" class="cursor-pointer text-gray-500 font-sans text-[#E50512]">First Row</label>
-                                        </div>
-                                
-                                        <div class="flex items-center space-x-2">
-                                            <span class="h-4 w-4 rounded-full flex items-center justify-center p-[2px] border border-[#E50512]">
-                                                <input type="radio" id="second-row" name="row" class="peer block appearance-none w-full h-full rounded-full checked:border-[#E50512] checked:bg-[#E50512]">
-                                            </span>
-                                            <label for="second-row" class="cursor-pointer text-gray-500 font-sans text-[#E50512]">Second Row</label>
-                                        </div>
-                                
-                                        <div class="flex items-center space-x-2">
-                                            <span class="h-4 w-4 rounded-full flex items-center justify-center p-[2px] border border-[#E50512]">
-                                                <input type="radio" id="last-row" name="row" class="peer block appearance-none w-full h-full rounded-full checked:border-[#E50512] checked:bg-[#E50512]">
-                                            </span>
-                                            <label for="last-row" class="cursor-pointer text-gray-500 font-sans text-[#E50512]">Last Row</label>
-                                        </div>
-                                    </div>
-                                </div>                       
-                            </div>
-    
-                            <div id="confirmationScreen" class="hidden mt-6">
-                                <h3 class="text-center text-lg font-medium mb-4">
-                                    Please confirm your details
-                                </h3>
-                                <ul class="text-center">
-                                    <li><strong>People:</strong> <span id="confirmPeople"></span></li>
-                                    <li><strong>Date:</strong> <span id="confirmDate"></span></li>
-                                    <li><strong>Time:</strong> <span id="confirmTime"></span></li>
-                                    <li><strong>Seating:</strong> <span id="confirmSeating"></span></li>
-                                    <li><strong>Row Preference:</strong> <span id="confirmRow"></span></li>
-                                </ul>
-                                <button onclick="submitReservation()" class="w-full bg-red-600 text-white py-2 mt-4">
-                                    Confirm Reservation
-                                </button>
+                                    </div>                    
                             </div>
                         </div>
-                        <div onclick="findTable(); showConfirmationScreen();"
-                            class="w-full rounded-lg flex items-center px-5 py-2.5 cursor-pointer relative z-40 justify-center bg-[#E50512] text-[#fff] text-xl">
+                        <div onclick="findTable();"
+                            class="w-full finttablebtn rounded-lg flex items-center px-5 py-2.5 cursor-pointer relative z-40 justify-center bg-[#E50512] text-[#fff] text-xl">
                             Find a Table
                         </div>
-                        <div class="w-full bg-[#FDEBEC] px-3 md:px-6 py-3 md:py-4 md:text-lg rounded-lg text-[#797979] font-sans z-30 relative ">
-                            Unfortunately, your party is <span class="text-[#000]">too large</span> to make an online reservation at BICE Mare Dubai. We recommend Contacting the restaurant directly.
-                        </div> -->
     
     
     
@@ -1222,14 +1207,14 @@
     
     
     
-                        <!-- <div class="space-y-4">
+                        <div class="space-y-4 hidden">
                             <div class="w-full bg-[#FDEBEC] px-6 py-4 md:text-lg rounded-lg text-[#797979] font-sans z-50 relative font-medium ">
                                 Due to limited availability, we can hold this table for you for <span class="text-[#000]"> 4:19 minutes</span>
                             </div>
                             <div class="flex py-4 gap-10 sm:flex-row flex-col">
-                                <form class="flex-1 space-y-4">
-                                    <input type="text" class="border border-[#D2D2D2] rounded-md w-full flex-1 px-4 py-2.5 text-[#797979] font-sans outline-none " placeholder="First Name" name="" id="">
-                                    <input type="text" class="border border-[#D2D2D2] rounded-md w-full flex-1 px-4 py-2.5 text-[#797979] font-sans outline-none " placeholder="Last Name" name="" id="">
+                                <form class="flex-1 space-y-4" onsubmit="confirmReservation(event)">
+                                    <input type="text" class="border border-[#D2D2D2] rounded-md w-full flex-1 px-4 py-2.5 text-[#797979] font-sans outline-none " required placeholder="First Name" name="" id="">
+                                    <input type="text" class="border border-[#D2D2D2] rounded-md w-full flex-1 px-4 py-2.5 text-[#797979] font-sans outline-none " required placeholder="Last Name" name="" id="">
                                     <div class="flex p-1.5 border border-[#D2D2D2] rounded-md w-full flex-1">
                                         <div class="max-w-[80px] w-full flex items-center justify-between">
                                             <div class="relative w-full mx-auto">
@@ -1257,26 +1242,29 @@
                                                 </ul>
                                             </div>
                                         </div>                                    
-                                        <input type="text" class="border-l border-[#D2D2D2] flex-1 px-4 py-1 text-[#797979] font-sans outline-none " placeholder="Last Name" name="" id="">
+                                        <input type="text" class="border-l border-[#D2D2D2] flex-1 px-4 py-1 text-[#797979] font-sans outline-none " required placeholder="Last Name" name="" id="">
                                     </div>
-                                    <input type="email" class="border border-[#D2D2D2] rounded-md w-full flex-1 px-4 py-2.5 text-[#797979] font-sans outline-none " placeholder="Email" name="" id="">
+                                    <input type="email" class="border border-[#D2D2D2] rounded-md w-full flex-1 px-4 py-2.5 text-[#797979] font-sans outline-none " required placeholder="Email" name="" id="">
                                     <input type="text" class="border border-[#D2D2D2] rounded-md w-full flex-1 px-4 py-2.5 text-[#797979] font-sans outline-none " placeholder="Add a Special request (optional)" name="" id="">
                                     <div class="flex gap-2 items-start">
-                                        <input type="checkbox" class="mt-1.5" name="checkbox1" id="checkbox1">
+                                        <input type="checkbox" class="mt-1.5" name="checkbox1" required id="checkbox1">
                                         <label for="checkbox1" class="text-[#797979] font-sans">Yes, I want to get text updates and reminders about my reservations</label>
                                     </div>
                                     <div class="flex gap-2 items-start">
-                                        <input type="checkbox" class="mt-1.5" name="checkbox2" id="checkbox2">
+                                        <input type="checkbox" class="mt-1.5" name="checkbox2" required id="checkbox2">
                                         <label for="checkbox2" class="text-[#797979] font-sans">Sign me up to receive dining offers and news from this restaurant by email </label>
                                     </div>
                                     <div class="flex gap-2 items-start">
-                                        <input type="checkbox" class="mt-1.5" name="checkbox3" id="checkbox3">
+                                        <input type="checkbox" class="mt-1.5" name="checkbox3" required id="checkbox3">
                                         <label for="checkbox3" class="text-[#797979] font-sans">Yes, I want to get text updates and reminders about my reservations</label>
                                     </div>
-                                    <div 
-                                        class="w-full rounded-lg flex items-center px-5 py-2.5 cursor-pointer relative z-40 justify-center bg-[#E50512] text-[#fff] text-xl">
+                                    <button 
+                                        type="button"
+                                        class="w-full rounded-lg flex items-center px-5 py-2.5 cursor-pointer relative z-40 justify-center bg-[#E50512] text-[#fff] text-xl"
+                                        onclick="confirmReservation(event)">
+                                        >
                                         Confirm Reservation
-                                    </div>
+                                    </button>
                                 </form>
                                 <div class="flex-1 space-y-5">
                                     <h4 class="text-[#202020] text-2xl">BICE Mare - Dubai</h4>
@@ -1303,23 +1291,41 @@
                                 </div>
                             </div>
                             <p class="text-[#797979] font-sans md:text-lg">Certain U.S. consumers may have additional data rights, which can be exercised by clicking <span class="text-[#E50512]">Do Not Sell or Share My Personal Information </span></p>
-                        </div> -->
-    
-    
-    
-    
-    
-                        <img src="assets/images/confirmedRswervation.png" class="mx-auto" alt="">
-                        <div>
-                            <p class="text-[#797979] text-center font-sans md:text-xl">Thanks for Confirming your Reservation in <span class="text-[#000]">Bice Mare Restaurant</span></p>
-                            <p class="text-[#797979] text-center font-sans md:text-xl">You should receive a <span class="text-[#000]">confirmation email</span> soon.</p>
                         </div>
-                        <a href="/"
-                            class="w-full rounded-lg flex items-center px-5 py-2 max-w-max cursor-pointer relative z-40 justify-center bg-[#E50512] text-[#fff] text-xl mx-auto">
-                            Go Home
-                        </a>
+    
+
+
+
+
+                        <div class="w-full bg-[#FDEBEC] px-3 md:px-6 py-3 md:py-4 md:text-lg rounded-lg text-[#797979] font-sans z-30 relative " id="error_message">
+                            Unfortunately, your party is <span class="text-[#000]">too large</span> to make an online reservation at BICE Mare Dubai. We recommend Contacting the restaurant directly.
+                        </div>
                     </div>
+
+
+
+
+
+
+
+
                 </div>
+                <div id="confirmationMessage" class="hidden p-6">
+                    <div class="flex items-center justify-end">
+                        <span class="cursor-pointer rounded-full h-[34px] w-[34px] flex items-center justify-center bg-[#F2F2F2]" onclick="reservation_popup_close()">
+                            <svg class="fill-[#000] h-[23px] w-[23px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                        </span>
+                    </div>
+                    <img src="assets/images/lastPopup.png" class="mx-auto" alt="">
+                    <div>
+                        <p class="text-[#797979] text-center font-sans">Thanks for Confirming your Reservation in <span class="text-[#000]">Bice Mare Restaurant</span></p>
+                        <p class="text-[#797979] text-center font-sans">You should receive a <span class="text-[#000]">confirmation email</span> soon.</p>
+                    </div>
+                    <a href="/"
+                       class="w-full rounded-lg flex items-center px-5 py-2 max-w-max cursor-pointer relative z-40 justify-center bg-[#E50512] text-[#fff] text-xl mx-auto mt-5">
+                       Go Home
+                    </a>
+                </div>                
             </div>
         </div>
     </section>
@@ -1333,96 +1339,172 @@
 
 
 
-const result = {
-    people: "",
-    time: "",
-    seating: "",
-    rowPreference: "" // Added for row preference
-};
+        const result = {
+            people: "",
+            time: "",
+            seating: "",
+            rowPreference: ""
+        };
 
-document.addEventListener("click", function (e) {
-    if (e.target.id === "peopleDropdown") {
-        toggleDropdown("peopleOptions");
-    } else if (e.target.id === "timeDropdown") {
-        toggleDropdown("timeOptions");
-    } else if (e.target.id === "seatingDropdown") {
-        toggleDropdown("seatingOptions");
-    } else {
-        closeAllDropdowns();
-    }
-});
 
-function toggleDropdown(id) {
-    const dropdown = document.getElementById(id);
-    dropdown.classList.toggle("hidden");
-}
 
-function closeAllDropdowns() {
-    document.getElementById("peopleOptions")?.classList.add("hidden");
-    document.getElementById("timeOptions")?.classList.add("hidden");
-    document.getElementById("seatingOptions")?.classList.add("hidden");
-}
 
-function selectOption(field, value) {
-    document.getElementById(field + "Dropdown").innerText = value;
-    result[field] = value;
 
-    document.getElementById(field + "Options").classList.add("hidden");
 
-    // Show radio buttons if "Terrace" is selected
-    if (value === 'Terrace') {
-        document.getElementById("radioBtns").classList.remove("hidden");
-    } else {
-        document.getElementById("radioBtns").classList.add("hidden");
-    }
-}
+        
 
-// Show time slots when "Find a Table" is clicked
-function findTable() {
-    // Check if seating is "Terrace" and ensure a row is selected
-    if (result.seating === "Terrace") {
-        const rowRadioBtns = document.querySelector('input[name="row"]:checked');
-        if (!rowRadioBtns) {
-            alert("Please select a row preference.");
-            return;
+        document.addEventListener("click", function (e) {
+            if (e.target.id === "peopleDropdown") {
+                toggleDropdown("peopleOptions");
+            } else if (e.target.id === "timeDropdown") {
+                toggleDropdown("timeOptions");
+            } else if (e.target.id === "seatingDropdown") {
+                toggleDropdown("seatingOptions");
+            } else {
+                closeAllDropdowns();
+            }
+        });
+
+        function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            dropdown.classList.toggle("hidden");
         }
-        result.rowPreference = rowRadioBtns.nextElementSibling.innerText;
-    }
 
-    if (
-        !result.people ||
-        !document.getElementById("dateInput").value ||
-        !result.time ||
-        !result.seating
-    ) {
-        alert("Please fill out all fields before finding a table.");
-        return;
-    }
+        function closeAllDropdowns() {
+            document.getElementById("peopleOptions")?.classList.add("hidden");
+            document.getElementById("timeOptions")?.classList.add("hidden");
+            document.getElementById("seatingOptions")?.classList.add("hidden");
+        }
 
-    // Show time slots first
-    document.getElementById("timeSlots").classList.remove("hidden");
-}
 
-// Once a time slot is selected, show the confirmation screen
-function selectTimeSlot(time) {
-    result.time = time;
-    console.log("Selected time slot:", time);
 
-    // Hide time slots and show the confirmation screen
-    document.getElementById("timeSlots").classList.add("hidden");
-    document.getElementById("confirmationScreen").classList.remove("hidden");
 
-    // Update confirmation screen with the details
-    document.getElementById("confirmPeople").innerText = result.people;
-    document.getElementById("confirmDate").innerText = document.getElementById("dateInput").value;
-    document.getElementById("confirmTime").innerText = result.time;
-    document.getElementById("confirmSeating").innerText = result.seating;
-    document.getElementById("confirmRow").innerText = result.rowPreference || "N/A"; // Show N/A if not "Terrace"
-}
 
-function submitReservation() {
-    alert("Reservation confirmed!");
-}
+
+
+
+
+
+        
+
+        function selectOption(field, value) {
+            document.getElementById(field + "Dropdown").innerText = value;
+            result[field] = value;
+
+            document.getElementById(field + "Options").classList.add("hidden");
+
+            if (value === 'Terrace') {
+                document.getElementById("radioBtns").classList.remove("hidden");
+            } else {
+                document.getElementById("radioBtns").classList.add("hidden");
+            }
+        }
+
+        function findTable() {
+            if (result.seating === "Terrace") {
+                const rowRadioBtns = document.querySelector('input[name="row"]:checked');
+                
+                if (!rowRadioBtns) {
+                    alert("Please select a row preference.");
+                    return;
+                }
+
+                const labelElement = rowRadioBtns.nextElementSibling;
+                if (labelElement && labelElement.innerText) {
+                    result.rowPreference = labelElement.innerText;
+                } else {
+                    console.error("Label element for the selected row is missing.");
+                    return;
+                }
+            }
+
+            if (
+                !result.people ||
+                !document.getElementById("dateInput").value ||
+                !result.time ||
+                !result.seating
+            ) {
+                alert("Please fill out all fields before finding a table.");
+                return;
+            }
+
+            document.getElementById("timeSlots").classList.remove("hidden");
+            document.querySelector(".finttablebtn").classList.add("hidden");
+        }
+
+
+
+        let selectedTimeSlot = null;
+
+        function selectTimeSlot(time) {
+            if (selectedTimeSlot) {
+                alert("You have already selected a time slot.");
+                return;
+            }
+
+            selectedTimeSlot = time;
+
+            document.getElementById('confirmTime').textContent = time;
+
+            document.querySelector('.space-y-4').classList.remove('hidden');
+
+            const inputs_grid = document.getElementById('inputs_grid');
+            let timeSlots = document.getElementById('timeSlots');
+            let error_message = document.getElementById('error_message');
+
+            inputs_grid.classList.add('hidden');
+            timeSlots.classList.add('hidden');
+            error_message.classList.add('hidden');
+            
+        }
+
+        function setOtherDetails() {
+            document.getElementById('confirmPeople').textContent = '4';
+            document.getElementById('confirmDate').textContent = 'September 25, 2024';
+            document.getElementById('confirmSeating').textContent = 'Indoor';
+            document.getElementById('confirmRow').textContent = 'Front Row';
+        }
+
+        setOtherDetails();
+
+
+
+    
+
+
+    
+
+
+
+
+
+
+        function confirmReservation(event) {
+            event.preventDefault(); // Prevent default form submission behavior
+            
+            // Check required input fields
+            const firstName = document.querySelector('input[placeholder="First Name"]').value.trim();
+            const lastName = document.querySelector('input[placeholder="Last Name"]').value.trim();
+            const email = document.querySelector('input[type="email"]').value.trim();
+            
+            const checkbox1 = document.getElementById('checkbox1').checked;
+            const checkbox2 = document.getElementById('checkbox2').checked;
+            const checkbox3 = document.getElementById('checkbox3').checked;
+
+            // Check dropdown selections
+            const selectedPeople = document.querySelector('#peopleDropdown').textContent.trim();
+            const selectedTime = document.querySelector('#timeDropdown').textContent.trim();
+            const selectedSeating = document.querySelector('#seatingDropdown').textContent.trim();
+            
+            if (firstName && lastName && email && checkbox1 && checkbox2 && checkbox3 &&
+                selectedPeople !== 'People' && selectedTime !== 'Time' && selectedSeating !== 'Seating') {
+                // Hide the current section and show the confirmation message
+                document.getElementById('clise_at_last').classList.add('hidden');
+                document.getElementById('confirmationMessage').classList.remove('hidden');
+            } else {
+                alert('Please fill in all required fields and make all selections before confirming.');
+            }
+        }
 
 
 
@@ -1535,24 +1617,24 @@ function submitReservation() {
 
 
 
-document.getElementById("countryDropdown").addEventListener("click", function () {
-    const dropdown = document.getElementById("countryOptions");
-    dropdown.classList.toggle("hidden");
-});
+        document.getElementById("countryDropdown").addEventListener("click", function () {
+            const dropdown = document.getElementById("countryOptions");
+            dropdown.classList.toggle("hidden");
+        });
 
-function selectCountry(name, flagUrl) {
-    document.getElementById("selectedFlag").src = flagUrl;
-    document.getElementById("countryOptions").classList.add("hidden");
-}
+        function selectCountry(name, flagUrl) {
+            document.getElementById("selectedFlag").src = flagUrl;
+            document.getElementById("countryOptions").classList.add("hidden");
+        }
 
-// Close the dropdown when clicking outside
-document.addEventListener("click", function (e) {
-    const dropdown = document.getElementById("countryOptions");
-    const button = document.getElementById("countryDropdown");
-    if (!button.contains(e.target)) {
-        dropdown.classList.add("hidden");
-    }
-});
+        // Close the dropdown when clicking outside
+        document.addEventListener("click", function (e) {
+            const dropdown = document.getElementById("countryOptions");
+            const button = document.getElementById("countryDropdown");
+            if (!button.contains(e.target)) {
+                dropdown.classList.add("hidden");
+            }
+        });
 
 
     </script>
