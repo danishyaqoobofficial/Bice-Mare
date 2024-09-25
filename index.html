@@ -1042,11 +1042,13 @@
                         <div class="mx-auto max-w-max py-2 flex w-full overflow-x-auto bg-">
                             <div class="p-[5px] flex gap-2 bg-[#fff] rounded-lg">
                                 <div
+                                    id="FATBtn"
                                     class="flex items-center justify-center px-7 py-2 bg-[#E50512] hover:custom_shadow transition-all rounded-lg text-[#fff] cursor-pointer whitespace-nowrap">
                                     Find a Table
                                 </div>
                                 <div
-                                    class="flex items-center justify-center px-7 py-2 hover:bg-secondry hover:custom_shadow transition-all rounded-lg text-grey1 cursor-pointer whitespace-nowrap">
+                                    id="YTBtn"
+                                    class="flex items-center justify-center px-7 py-2 hover:bg-secondry text-grey1 hover:custom_shadow transition-all rounded-lg cursor-pointer whitespace-nowrap">
                                     Your Detail
                                 </div>
                             </div>
@@ -1304,11 +1306,6 @@
 
 
 
-
-
-
-
-
                 </div>
                 <div id="confirmationMessage" class="hidden p-6">
                     <div class="flex items-center justify-end">
@@ -1444,9 +1441,20 @@
 
             selectedTimeSlot = time;
 
-            document.getElementById('confirmTime').textContent = time;
-
+            document.getElementById('confirmTime').textContent = `Selected Time: ${time}`;
             document.querySelector('.space-y-4').classList.remove('hidden');
+
+            const fatBtn = document.getElementById('FATBtn');
+            const ytBtn = document.getElementById('YTBtn');
+
+            console.log('Before:', fatBtn.classList, ytBtn.classList);
+
+            fatBtn.classList.remove('bg-[#E50512]');
+            fatBtn.classList.add('!hover:bg-secondry', '!text-grey1');
+
+            ytBtn.classList.add('!bg-[#E50512]', '!text-[#fff]');
+
+            console.log('After:', fatBtn.classList, ytBtn.classList);
 
             const inputs_grid = document.getElementById('inputs_grid');
             let timeSlots = document.getElementById('timeSlots');
@@ -1455,8 +1463,8 @@
             inputs_grid.classList.add('hidden');
             timeSlots.classList.add('hidden');
             error_message.classList.add('hidden');
-            
         }
+
 
         function setOtherDetails() {
             document.getElementById('confirmPeople').textContent = '4';
